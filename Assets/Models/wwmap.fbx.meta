@@ -3,7 +3,112 @@ guid: 9272165cc3de14b499b6ec8cda29792a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Big Stained Glass
+    second: {fileID: 2100000, guid: 6706f0de161f1914797cbcf6b903cc13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Small Stained Glass
+    second: {fileID: 2100000, guid: 13e85bfc55edfcc4a992007c9cfd8ff5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2100000, guid: 6c7d83d9fdd24cf4daabbb2c61252980, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_door
+    second: {fileID: 2100000, guid: edbf8df4dda5d7546905e66fc1015e5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_floor
+    second: {fileID: 2100000, guid: 635189cda5d2bd94a87b533bacfc553a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_roof
+    second: {fileID: 2100000, guid: a31c01808066b0141b847e41c3824532, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_walls
+    second: {fileID: 2100000, guid: 83141b9f308ba024a9cc434042d238e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 1ab000fbc8f37714e9f76e2bb33cb541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: front_stained_glass
+    second: {fileID: 2100000, guid: 51d979be0a6527b4a8a8570c187d4612, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: front_stained_glass.001
+    second: {fileID: 2100000, guid: f0874ee32faad6b45abbe6ae4fec9244, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lookout_underside
+    second: {fileID: 2100000, guid: 974bccbfebc28d5489441c717c086134, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: platform_underside
+    second: {fileID: 2100000, guid: fe58b8d2075646641a909e06e086bf5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof_underside
+    second: {fileID: 2100000, guid: fbb9b3c36536285469e13acb703abd3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sand
+    second: {fileID: 2100000, guid: 596c8a57896e76648bf87ca613c2aa23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_floor
+    second: {fileID: 2100000, guid: 49e7c5c8f622ae046a77a84f58e5a4e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_hand_rail
+    second: {fileID: 2100000, guid: df3b3de16d075c14f8e6afca452305b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_roof
+    second: {fileID: 2100000, guid: bd9c0a125b5db324e859637a5d60e88a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_stairs
+    second: {fileID: 2100000, guid: 459c7e7d8d1a7df459ff46895e9a02ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_wall
+    second: {fileID: 2100000, guid: de7bed40d184ea24f9a0cb73cf0f2aa6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 9e2a5bd0ed3e5fa45abb86d9a99bcaa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: water
+    second: {fileID: 2100000, guid: 6ef4bbd1409475f40a01ef6749245914, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
