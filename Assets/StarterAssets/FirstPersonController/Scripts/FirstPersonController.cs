@@ -74,6 +74,8 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+		public UnityEngine.Events.UnityAction<Vector3> OnMove; 
+
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -193,6 +195,10 @@ namespace StarterAssets
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
+
+			//Calls the on move event, used to update animations atm
+			//OnMove.Invoke(inputDirection.normalized * ((_speed/targetSpeed) * Time.deltaTime));
+			OnMove.Invoke(inputDirection);
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
