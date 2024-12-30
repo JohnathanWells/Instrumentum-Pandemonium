@@ -7,7 +7,7 @@ public class WaifuManager : MonoBehaviour
     public Pawn pawnPrefab;
     public List<Pawn> spawnedPawns = new List<Pawn>();
 
-    public NetworkManager downloadManager;
+    public OLD_NetworkManager downloadManager;
     Queue<string> queryList = new Queue<string>();
 
     public static WaifuManager Instance;

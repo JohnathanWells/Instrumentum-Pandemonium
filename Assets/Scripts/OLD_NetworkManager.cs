@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class NetworkManager : MonoBehaviour
+
+public class OLD_NetworkManager : MonoBehaviour
 {
     public int MAX_SIM;
 

@@ -5,7 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NetworkTests/NetworkTutorial.unity
     guid: fa871ca2df7fa96418c520298108e128
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Limbo.unity
+    guid: df7643e9bc5453644944ef58f1f504b5
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2b8e45602da8d2b45aceffd37a9f6556
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
