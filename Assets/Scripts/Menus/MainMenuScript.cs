@@ -59,7 +59,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void EnterName(string nm)
     {
-        Debug.Log("Setting player name as " + nm);
+        //Debug.Log("Setting player name as " + nm);
         PlayerSettings.playerName = nm;
     }
 

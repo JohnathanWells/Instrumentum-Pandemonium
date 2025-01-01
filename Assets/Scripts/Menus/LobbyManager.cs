@@ -91,6 +91,9 @@ public class LobbyManager : MonoBehaviour
     {
         HostManager.Singleton.SelectGamemode(to);
 
+        if (SessionManager.Singleton.IsServer)
+            SessionManager.Singleton.SetGamemodeRpc(to);
+
         //if (mapsAvailable.options.Count > 0)
         //    mapsAvailable.onValueChanged.Invoke(0);
     }
@@ -99,8 +102,19 @@ public class LobbyManager : MonoBehaviour
     {
         HostManager.Singleton.SelectMap(to);
 
+        if (SessionManager.Singleton.IsServer)
+            SessionManager.Singleton.SetMapRpc(to);
+
         mapThumbnail.sprite = HostManager.Singleton.selectedMap.thumbnail;
 
+    }
+
+    public void UpdateDropdowns()
+    {
+        lobbyGamemodeDropdown.value = SessionManager.Singleton.gamemodeID.Value;
+        preLobbyGamemodeDropdown.value = SessionManager.Singleton.gamemodeID.Value;
+        lobbyMapDropdown.value = SessionManager.Singleton.mapID.Value;
+        preLobbyMapDropdown.value = SessionManager.Singleton.mapID.Value;
     }
 
     private void Update()
@@ -117,6 +131,11 @@ public class LobbyManager : MonoBehaviour
         //SessionManager.Singleton.OnPlayerConnected += AddPlayerToList;
         //SessionManager.Singleton.OnPlayerDisconnected += RemovePlayerFromList;
         SessionManager.Singleton.OnPlayerConnected += UpdatePlayers;
+
+        foreach (var p in FindObjectsByType<Player>(FindObjectsSortMode.None))
+        {
+            p.OnPlayerNameChanged += UpdatePlayers;
+        }
     }
 
     private void OnDisable()
@@ -124,6 +143,11 @@ public class LobbyManager : MonoBehaviour
         //SessionManager.Singleton.OnPlayerConnected -= AddPlayerToList;
         //SessionManager.Singleton.OnPlayerDisconnected -= RemovePlayerFromList;
         SessionManager.Singleton.OnPlayerConnected -= UpdatePlayers;
+
+        foreach (var p in FindObjectsByType<Player>(FindObjectsSortMode.None))
+        {
+            p.OnPlayerNameChanged -= UpdatePlayers;
+        }
     }
 
     public void HostServer()

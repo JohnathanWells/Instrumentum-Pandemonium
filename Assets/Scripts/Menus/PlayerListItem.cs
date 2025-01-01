@@ -1,16 +1,17 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.Collections;
 
 public class PlayerListItem : MonoBehaviour
 {
-    public string _playerName;
-    public string playerName
+    public FixedString64Bytes _playerName;
+    public FixedString64Bytes playerName
     {
         set
         {
             _playerName = value;
-            playerNameDisplay.text = _playerName;
+            playerNameDisplay.text = _playerName.ToString();
         }
         get
         {
