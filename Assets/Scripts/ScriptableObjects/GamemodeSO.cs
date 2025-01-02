@@ -4,10 +4,6 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "GamemodeSO", menuName = "ScriptableObjects/GamemodeSO")]
 public class GamemodeSO : ScriptableObject
 {
-    public string gamemodeID;
-    public string gamemodeName;
-    [TextArea] public string gamemodeDescription;
-
     [System.Serializable]
     public class GamemodeIntVariable
     {
@@ -21,10 +17,10 @@ public class GamemodeSO : ScriptableObject
         public class TargetValue
         {
             public int targetValue;
-            public enum Actions {ResetVariable, DetermineVictor, PlayerVictory, EliminatePlayer}
+            public enum Actions { ResetVariable, DetermineVictor, PlayerVictory, EliminatePlayer }
             public Actions[] OnTargetReached;
 
-            public enum OperationType { Equal, EqualOrMore, EqualOrLess, NotEqual};
+            public enum OperationType { Equal, EqualOrMore, EqualOrLess, NotEqual };
             public OperationType CheckType;
             //public UnityEvent<string> OnTargetReached;
 
@@ -85,7 +81,7 @@ public class GamemodeSO : ScriptableObject
         }
 
         public bool CheckValue(int val)
-        { 
+        {
             foreach (var v in targetValues)
             {
                 if (v.CheckTarget(val))
@@ -97,7 +93,23 @@ public class GamemodeSO : ScriptableObject
         }
     }
 
+    public bool hidden = false;
+    public string gamemodeID;
+    public string gamemodeName;
+    [TextArea] public string gamemodeDescription;
+
+
     public GamemodeIntVariable[] globalVariables;
 
     public GamemodeIntVariable[] playerVariables;
+
+    [Header("Team Settings")]
+    public bool teamBased = false; //Not used
+    public string[] teams; //Not used
+    public bool allowPlayersToChangeTeams = true; //Not used
+
+    [Header("Life Settings")]
+    public int basicLivesPerPlayer = 5;
+    public bool eachLifeHasAName = true;
+    public bool livesSharedAccrossTeam = false; //Not used
 }

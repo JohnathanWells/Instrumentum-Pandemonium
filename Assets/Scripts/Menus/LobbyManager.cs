@@ -12,18 +12,24 @@ public class LobbyManager : MonoBehaviour
     public Button HostBtn;
     public Button JoinBtn;
 
+    public Button startMatchBtn;
+
     public TMP_InputField preLobbyServerNameInputField;
-    public TMP_Dropdown preLobbyGamemodeDropdown;
-    public TMP_Dropdown preLobbyMapDropdown;
+    public TMP_Dropdown[] gamemodeDropdownList;
+    public TMP_Dropdown[] mapDropdownList;
 
-    //public TextMeshProUGUI lobbyServerNameDisplay;
-    public TMP_Dropdown lobbyGamemodeDropdown;
-    public TMP_Dropdown lobbyMapDropdown;
+    private List<string> gamemodesInDropdown = new List<string>();
+    private List<string> mapsInDropdown = new List<string>();
 
-    public Image mapThumbnail;
+
+    public Image[] mapThumbnails;
+    public Sprite emptyThumbnail;
 
     public UnityEvent<string> OnServerNameValid;
     public UnityEvent<string> OnServerNameNotValid;
+
+    public UnityEvent OnServerOptionsValid;
+    public UnityEvent OnServerOptionsNotValid;
 
     public RectTransform playerListArea;
     public PlayerListItem playerListItem;
@@ -35,86 +41,200 @@ public class LobbyManager : MonoBehaviour
     private void Start()
     {
         Singleton = this;
+
+        HostManager.LoadAllGamemodes();
+        HostManager.LoadAllMaps();
+        PopulateGamemodeDropdown();
+        PopulateMapDropdown();
     }
 
     public void PopulateGamemodeDropdown()
     {
-
         List<string> gamemodeNames = new List<string>();
+        gamemodesInDropdown = new List<string>();
 
-        foreach (var gm in HostManager.Singleton.GetGamemodes())
+        foreach (var gm in HostManager.GetGamemodeList())
         {
             gamemodeNames.Add(gm.gamemodeName);
+            gamemodesInDropdown.Add(gm.gamemodeID);
         }
 
-        preLobbyGamemodeDropdown.ClearOptions();
-        preLobbyGamemodeDropdown.AddOptions(gamemodeNames);
-
-        lobbyGamemodeDropdown.ClearOptions();
-        lobbyGamemodeDropdown.AddOptions(gamemodeNames);
-
-        if (HostManager.Singleton.selectedGamemode == null && preLobbyGamemodeDropdown.options.Count > 0)
+        foreach (var d in gamemodeDropdownList)
         {
-            SetGamemode(0);
+            d.ClearOptions();
+            d.AddOptions(gamemodeNames);
+        }
+
+        if (gamemodesInDropdown.Count > 0)
+        {
+            if (HostManager.selectedGamemode == null)
+            {
+                SetGamemode(gamemodesInDropdown[0]);
+            }
+            else if (gamemodesInDropdown.Contains(HostManager.selectedGamemode.gamemodeID))
+            {
+                SetGamemode(HostManager.selectedGamemode.gamemodeID);
+            }
+
+        }
+        else
+        {
+            HostManager.DeselectGamemode();
+            HostManager.DeselectMap();
         }
     }
 
     public void PopulateMapDropdown()
     {
-
+        mapsInDropdown = new List<string>();
         List<string> mapNames = new List<string>();
 
-        foreach (var m in HostManager.Singleton.GetMaps())
+        if (HostManager.selectedGamemode == null)
+            return;
+
+        foreach (var m in HostManager.GetMapList())
         {
             foreach (var gm in m.validGamemodes)
             {
-                if (gm == HostManager.Singleton.selectedGamemode)
+                if (gm.gamemodeID == HostManager.selectedGamemode.gamemodeID)
                 {
                     mapNames.Add(m.mapName);
+                    mapsInDropdown.Add(m.mapID);
                 }
             }
         }
 
-        preLobbyMapDropdown.ClearOptions();
-        preLobbyMapDropdown.AddOptions(mapNames);
-
-        lobbyMapDropdown.ClearOptions();
-        lobbyMapDropdown.AddOptions(mapNames);
-
-        if (HostManager.Singleton.selectedMap == null && preLobbyMapDropdown.options.Count > 0)
+        foreach (var d in mapDropdownList)
         {
-            SetMap(0);
+            d.ClearOptions();
+            d.AddOptions(mapNames);
+        }
+
+        if (mapsInDropdown.Count > 0)
+        {
+            if (HostManager.selectedMap == null)
+            {
+                SetMap(mapsInDropdown[0]);
+                return;
+            }
+            else if (mapsInDropdown.Contains(HostManager.selectedMap.mapID))
+            {
+                SetMap(HostManager.selectedMap.mapID);
+            }
+        }
+        else
+        {
+            HostManager.DeselectMap();
         }
     }
 
     public void SetGamemode(int to)
     {
-        HostManager.Singleton.SelectGamemode(to);
+        if (to >= gamemodesInDropdown.Count || to < 0)
+        {
+            return;
+        }
 
-        if (SessionManager.Singleton.IsServer)
+        SetGamemode(gamemodesInDropdown[to]);
+    }
+
+    public void SetGamemode(string to)
+    {
+
+        if (NetworkManager.Singleton.IsServer)
             SessionManager.Singleton.SetGamemodeRpc(to);
+        else if (!NetworkManager.Singleton.IsClient)
+        {
+            HostManager.SetSelectedGamemode(to);
+            UpdateGameModeDropdowns();
+        }
 
-        //if (mapsAvailable.options.Count > 0)
-        //    mapsAvailable.onValueChanged.Invoke(0);
+        ValidateServerOptions();
     }
 
     public void SetMap(int to)
     {
-        HostManager.Singleton.SelectMap(to);
+        if (to >= mapsInDropdown.Count || to < 0)
+        {
+            return;
+        }
 
-        if (SessionManager.Singleton.IsServer)
-            SessionManager.Singleton.SetMapRpc(to);
-
-        mapThumbnail.sprite = HostManager.Singleton.selectedMap.thumbnail;
-
+        SetMap(mapsInDropdown[to]);
     }
 
-    public void UpdateDropdowns()
+    public void SetMap(string to)
     {
-        lobbyGamemodeDropdown.value = SessionManager.Singleton.gamemodeID.Value;
-        preLobbyGamemodeDropdown.value = SessionManager.Singleton.gamemodeID.Value;
-        lobbyMapDropdown.value = SessionManager.Singleton.mapID.Value;
-        preLobbyMapDropdown.value = SessionManager.Singleton.mapID.Value;
+
+        if (NetworkManager.Singleton.IsServer)
+            SessionManager.Singleton.SetMapRpc(to);
+        else if (!NetworkManager.Singleton.IsClient)
+        {
+            HostManager.SetSelectedMap(to);
+            UpdateMapDropdowns();
+        }
+
+        ValidateServerOptions();
+    }
+
+    public void UpdateDropdowns(string dummy)
+    {
+        UpdateMapDropdowns();
+        UpdateGameModeDropdowns();
+    }
+
+    public void UpdateMapDropdowns()
+    {
+        int mapInd = -1;
+        for (int i = 0; i < mapsInDropdown.Count; i++)
+        {
+            if (mapsInDropdown[i] == HostManager.selectedMap.mapID)
+            {
+                mapInd = i;
+                break;
+            }
+        }
+
+        //Debug.Log("Updating map dropdowns to match " + HostManager.selectedMap.mapID);
+        if (mapInd >= 0 && mapInd < mapDropdownList.Length)
+        {
+            foreach (var mDp in mapDropdownList)
+            {
+                mDp.value = mapInd;
+            }
+        }
+
+        foreach (var t in mapThumbnails)
+        {
+            if (HostManager.selectedMap == null)
+            {
+                t.sprite = emptyThumbnail;
+                continue;
+            }
+            
+            t.sprite = HostManager.GetMapSprite();
+        }
+    }    
+    
+    public void UpdateGameModeDropdowns()
+    {
+        int gmInd = -1;
+        for (int i = 0; i < gamemodesInDropdown.Count; i++)
+        {
+            if (gamemodesInDropdown[i] == HostManager.selectedGamemode.gamemodeID)
+            {
+                gmInd = i;
+                break;
+            }
+        }
+
+        //Debug.Log("Updating gamemode dropdowns to match " + HostManager.selectedGamemode.gamemodeID);
+        if (gmInd >= 0 && gmInd < gamemodeDropdownList.Length)
+        {
+            foreach (var gmDp in gamemodeDropdownList)
+            {
+                gmDp.value = gmInd;
+            }
+        }
     }
 
     private void Update()
@@ -131,10 +251,17 @@ public class LobbyManager : MonoBehaviour
         //SessionManager.Singleton.OnPlayerConnected += AddPlayerToList;
         //SessionManager.Singleton.OnPlayerDisconnected += RemovePlayerFromList;
         SessionManager.Singleton.OnPlayerConnected += UpdatePlayers;
+        SessionManager.Singleton.OnPlayerDisconnected += UpdatePlayers;
+        SessionManager.Singleton.OnGamemodeChanged += UpdateDropdowns;
+        SessionManager.Singleton.OnMapChanged += UpdateDropdowns;
+        //SessionManager.Singleton.OnPlayerObjectSpawned += IntroduceToPlayer;
+        SessionManager.Singleton.OnPlayerSettingsChanged += UpdatePlayers;
+        startMatchBtn.onClick.AddListener(() => StartGame());
 
         foreach (var p in FindObjectsByType<Player>(FindObjectsSortMode.None))
         {
-            p.OnPlayerNameChanged += UpdatePlayers;
+            //p.OnPlayerNameChanged += UpdatePlayers;
+            p.PromptNameRpc();
         }
     }
 
@@ -143,11 +270,17 @@ public class LobbyManager : MonoBehaviour
         //SessionManager.Singleton.OnPlayerConnected -= AddPlayerToList;
         //SessionManager.Singleton.OnPlayerDisconnected -= RemovePlayerFromList;
         SessionManager.Singleton.OnPlayerConnected -= UpdatePlayers;
+        SessionManager.Singleton.OnPlayerDisconnected -= UpdatePlayers;
+        SessionManager.Singleton.OnGamemodeChanged -= UpdateDropdowns;
+        SessionManager.Singleton.OnMapChanged -= UpdateDropdowns;
+        //SessionManager.Singleton.OnPlayerObjectSpawned -= IntroduceToPlayer;
+        SessionManager.Singleton.OnPlayerSettingsChanged -= UpdatePlayers;
+        startMatchBtn.onClick.RemoveListener(() => StartGame());
 
-        foreach (var p in FindObjectsByType<Player>(FindObjectsSortMode.None))
-        {
-            p.OnPlayerNameChanged -= UpdatePlayers;
-        }
+        //foreach (var p in FindObjectsByType<Player>(FindObjectsSortMode.None))
+        //{
+        //    p.OnPlayerNameChanged -= UpdatePlayers;
+        //}
     }
 
     public void HostServer()
@@ -172,36 +305,47 @@ public class LobbyManager : MonoBehaviour
         OnServerNameValid.Invoke(nm);
     }
 
-    //public void AddPlayerToList(ulong withId)
-    //{
-    //    playersInList.Add(withId, Instantiate(playerListItem, playerListArea));
-    //}
+    public void ValidateServerOptions()
+    {
+        if (HostManager.selectedGamemode == null || HostManager.selectedMap == null)
+        {
+            OnServerOptionsNotValid?.Invoke();
+            ValidateIfGameIsReady();
+            return;
+        }
+                
+        OnServerOptionsValid?.Invoke();
+        //ValidateIfGameIsReady();
+    }
 
-    //public void RemovePlayerFromList(ulong withID)
-    //{
-    //    Destroy(playersInList[withID].gameObject);
-    //    playersInList.Remove(withID);
-    //}
+    public void ValidateIfGameIsReady()
+    {
+        if (NetworkManager.Singleton.IsClient)
+        {
+            startMatchBtn.interactable = false;
+            return;
+        }
 
-    //public void ClearPlayersFromList()
-    //{
-    //    //for (int n = playersInList.Count - 1; n >= 0; n--)
-    //    //{
-    //    //    Destroy(playersInList[n].gameObject);
-    //    //}
+        if (SessionManager.Singleton == null)
+        {
+            startMatchBtn.interactable = false;
+            return;
+        }
+        
+        startMatchBtn.interactable = (playersInList.Count <= SessionManager.Singleton.sessionSettings.maxPlayerCount);
+    }
 
-    //    Transform[] playerIcons = playerListArea.GetComponentsInChildren<Transform>();
-
-    //    for (int n = playerIcons.Length; n > 0; n--)
-    //    {
-    //        Destroy(playerIcons[n].gameObject);
-    //    }
-
-    //    playersInList.Clear();
-    //}
+    public void IntroduceToPlayer(NetworkBehaviour newPlayer)
+    {
+        if (newPlayer is Player)
+        {
+            UpdatePlayers();
+        }
+    }
 
     public void UpdatePlayers()
     {
+        Debug.Log("updating player list...");
         for (int n = playersInList.Count - 1; n >= 0; n--)
         {
             Destroy(playersInList[n].gameObject);
@@ -214,7 +358,6 @@ public class LobbyManager : MonoBehaviour
             PlayerListItem listItem = Instantiate(playerListItem, playerListArea);
             //p.Init();
             listItem.playerName = p.playerName;
-            Debug.Log(p.playerName);
             playersInList.Add(listItem);
         }
     }
@@ -222,5 +365,10 @@ public class LobbyManager : MonoBehaviour
     public void UpdatePlayers(ulong var)
     {
         UpdatePlayers();
+    }
+
+    public void StartGame()
+    {
+        SessionManager.Singleton.LoadSelectedMap();
     }
 }

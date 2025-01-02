@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6908ab876a9f1294d93594f9178dfdfa, type: 3}
-  m_Name: LastOneStanding
+  m_Name: 1_LastOneStanding
   m_EditorClassIdentifier: 
-  gamemodeID: LOS
+  gamemodeID: los
   gamemodeName: Last One Standing
   gamemodeDescription: 
   globalVariables:

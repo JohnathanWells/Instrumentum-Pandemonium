@@ -1,16 +1,20 @@
 using UnityEngine;
+using Unity.Netcode;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerScript : NetworkBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public enum Mode { Combat, Spectator, None};
+    public Mode currentMode = Mode.Spectator;
 
-    // Update is called once per frame
-    void Update()
-    {
+    public GameObject spectatorObject;
+    //public MonoBehaviour spectatorCamera;
+
+    public GameObject combatObject;
+
+    //[Rpc(SendTo.NotOwner)]
+
+    //public void OnDisable()
+    //{
         
-    }
+    //}
 }

@@ -5,38 +5,29 @@ using UnityEngine.Events;
 
 public class Player : NetworkBehaviour
 {
-    private NetworkVariable<FixedString64Bytes> _playerName = new NetworkVariable<FixedString64Bytes>();
+    //private NetworkVariable<FixedString64Bytes> _playerNameNet = new NetworkVariable<FixedString64Bytes>();
+    private string _playerName = "UNKNOWN";
     public string playerName
     {
         set
         {
-            _playerName.Value = value;
+            //_playerName.Value = value;
+            _playerName = value;
+            //_playerNameNet.Value = _playerName;
         }
         get
         {
-            return _playerName.Value.ToString();
+            //return _playerName.Value.ToString();
+            return _playerName;
         }
     }
     public UnityAction OnPlayerNameChanged;
-
-    private void Awake()
-    {
-        //Init();
-        //LobbyManager.Singleton.UpdatePlayers();
-    }
-
     public override void OnNetworkSpawn()
     {
         if (IsOwner)
         {
-            if (!IsHost)
-            {
-                Debug.Log("NOT HOST");
-                SetNameRpc(PlayerSettings.playerName);
-                return;
-            }
-
-            playerName = PlayerSettings.playerName;
+            SetNameRpc(PlayerSettings.playerName);
+            SessionManager.Singleton.RegisterPlayer(this);
         }
         else
         {
@@ -44,52 +35,60 @@ public class Player : NetworkBehaviour
             Debug.Log("IsHost: " + IsHost.ToString());
         }
 
+        SessionManager.Singleton.OnPlayerObjectSpawned?.Invoke(this);
+
         //LobbyManager.Singleton.UpdatePlayers();
     }
 
-    void NetworkPlayerName_OnValueChanged(FixedString64Bytes prevVal, FixedString64Bytes newVal)
+    private void OnEnable()
     {
-        //Nothing
+        NetworkManager.OnConnectionEvent += UpdateNewClientOnName;
     }
 
-    //[Rpc(SendTo.Everyone)]
-    //public void SetNameRpc(string to)
-    //{
-    //    Debug.Log();
-    //    this.playerName = to;
-    //}
+    private void OnDisable()
+    {
+        NetworkManager.OnConnectionEvent -= UpdateNewClientOnName;
+    }
 
-    [Rpc(SendTo.Server)]
-    public void SetNameRpc(string to)
+    private void UpdateNewClientOnName(NetworkManager nm, ConnectionEventData connectionData)
+    {
+        if (connectionData.EventType == ConnectionEvent.PeerConnected)
+            SetNameRpc(playerName, RpcTarget.Single(connectionData.ClientId, RpcTargetUse.Temp));
+    }
+
+    [Rpc(SendTo.SpecifiedInParams)]
+    public void SetNameRpc(string to, RpcParams rpcParams = default)
     {
         this.playerName = to;
 
-        Debug.Log("Name of " + gameObject.name + " set to " + this.playerName);
+        Debug.Log("Name of " + OwnerClientId + " set to " + this.playerName);
 
         OnPlayerNameChanged?.Invoke();
     }
 
-    //public void Init()
-    //{
-    //    if (IsOwner)
-    //        SetNameRpc(PlayerSettings.playerName);
+    [Rpc(SendTo.Owner)]
+    public void PromptNameRpc()
+    {
+        Debug.Log(playerName);
+        SetNameRpc(playerName);
+    }
 
-    //    return;
+    [Rpc(SendTo.Server)]
+    public void SetNameRpc(string to)
+    {
+        UpdateNameRpc(to);
+    }
 
-    //    if (IsOwner)
-    //    {
-    //        this.playerName = PlayerSettings.playerName;
-    //        Debug.Log("Player is called " + this.playerName);
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Player " + NetworkManager.Singleton.LocalClientId + " is not the owner of " + gameObject.name + ", " + OwnerClientId);
-    //        Debug.Log("IsHost: " + IsHost.ToString());
+    [Rpc(SendTo.Everyone)]
+    public void UpdateNameRpc(string to)
+    {
+        this.playerName = to;
 
-    //        SetNameRpc(PlayerSettings.playerName);
-    //    }
+        Debug.Log("Name of " + OwnerClientId + " set to " + this.playerName);
 
-    //}
+        SessionManager.Singleton.OnPlayerSettingsChanged?.Invoke();
+        OnPlayerNameChanged?.Invoke();
 
+    }
 
 }
