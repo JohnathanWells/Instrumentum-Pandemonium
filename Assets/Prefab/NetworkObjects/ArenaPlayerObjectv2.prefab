@@ -6559,6 +6559,7 @@ GameObject:
   - component: {fileID: 209510965268709135}
   - component: {fileID: 7010523106496175496}
   - component: {fileID: 7074892960910279067}
+  - component: {fileID: 7442803694805560362}
   m_Layer: 0
   m_Name: ArenaPlayerObjectv2
   m_TagString: Untagged
@@ -6941,6 +6942,21 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &7442803694805560362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175367526916074043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  TransitionStateInfoList: []
+  m_Animator: {fileID: 8790933568388681330}
 --- !u!1001 &5267514669152796879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7410,9 +7426,6 @@ PrefabInstance:
       addedObject: {fileID: 6358238408721291042}
     - targetCorrespondingSourceObject: {fileID: 375637487118949597, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7829210909710843270}
-    - targetCorrespondingSourceObject: {fileID: 375637487118949597, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2953291468289746515}
   m_SourcePrefab: {fileID: 100100000, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
 --- !u!1 &72338443336445879 stripped
@@ -7725,21 +7738,6 @@ MonoBehaviour:
   animator: {fileID: 8790933568388681330}
   firstPersonController: {fileID: 6759354477647401174}
   dampTime: 0.1
---- !u!114 &7829210909710843270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5489730591182593042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  TransitionStateInfoList: []
-  m_Animator: {fileID: 8790933568388681330}
 --- !u!114 &2953291468289746515
 MonoBehaviour:
   m_ObjectHideFlags: 0

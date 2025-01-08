@@ -10,6 +10,8 @@ public class DynamicEventsNetworkScript : NetworkBehaviour
     public UnityEvent OnOwner;
     public UnityEvent OnNotOwner;
 
+    public UnityEvent OnNotConnected;
+
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
@@ -24,6 +26,7 @@ public class DynamicEventsNetworkScript : NetworkBehaviour
         UpdateEvents();
     }
 
+
     public override void OnLostOwnership()
     {
         base.OnLostOwnership();
@@ -33,6 +36,12 @@ public class DynamicEventsNetworkScript : NetworkBehaviour
 
     void UpdateEvents()
     {
+        if (!IsClient && !IsServer)
+        {
+            OnNotConnected.Invoke();
+            return;
+        }
+
         if (IsClient)
         {
             OnClient.Invoke();
