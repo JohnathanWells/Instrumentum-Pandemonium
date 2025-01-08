@@ -88,18 +88,6 @@ public class SessionManager : NetworkBehaviour
         m_NetworkManager.OnConnectionEvent += UpdatePlayerList;
         m_NetworkManager.OnConnectionEvent += UpdateNewClient;
         m_NetworkManager.OnConnectionEvent += UpdateOwnershipDependentStates;
-        m_NetworkManager.SceneManager.OnLoadEventCompleted += SceneManager_OnLoadEventCompleted;
-        //m_NetworkManager.OnConnectionEvent += SpawnPlayerManager;
-    }
-
-    private void SceneManager_OnLoadEventCompleted(string sceneName, UnityEngine.SceneManagement.LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut)
-    {
-        SpawnAllPlayersInMapRpc();
-    }
-
-    private void SceneManager_OnLoadComplete(ulong clientId, string sceneName, UnityEngine.SceneManagement.LoadSceneMode loadSceneMode)
-    {
-        OnMapLoad();
     }
 
     private void OnDisable()
@@ -108,8 +96,6 @@ public class SessionManager : NetworkBehaviour
         m_NetworkManager.OnConnectionEvent -= UpdatePlayerList;
         m_NetworkManager.OnConnectionEvent -= UpdateNewClient;
         m_NetworkManager.OnConnectionEvent -= UpdateOwnershipDependentStates;
-
-        //m_NetworkManager.OnConnectionEvent -= SpawnPlayerManager;
     }
 
     public void LoadSelectedMap()
@@ -159,6 +145,11 @@ public class SessionManager : NetworkBehaviour
         instance.SpawnAsPlayerObject(connectionData.ClientId, false);
     }
 
+    public void SpawnNetworkObject(NetworkObject obj)
+    {
+        obj.Spawn();
+    }
+
     private void UpdateOwnershipDependentStates(NetworkManager nm, ConnectionEventData connectionData)
     {
         DynamicInteractivityNetworkScript.UpdateAll();
@@ -175,28 +166,23 @@ public class SessionManager : NetworkBehaviour
 
     public void OnMapLoad()
     {
-        Debug.Log("Getting local gamemode handler...");
-        var candidates = FindObjectsByType<GamemodeBase>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        Debug.Log("Getting local arena handler...");
 
-        foreach (var c in candidates)
-        {
-            if (c.gamemodeSO == HostManager.selectedGamemode)
-            {
-                c.SetAsSingleton();
-            }
-            else
-            {
-                Destroy(c.gameObject);
-            }
-        }
+        var arenaManager = FindFirstObjectByType<ArenaLocalManager>();
 
-        if (GamemodeBase.Singleton == null)
+        if (arenaManager == null)
         {
-            Debug.LogError("The scene does not have the required gamemode!");
+            Debug.LogError("No local arena manager was found!");
+
             return;
         }
 
+        Debug.Log("Finding local instance of gamemode " + HostManager.selectedGamemode.gamemodeName);
 
+        if (!arenaManager.AssignActiveGameMode(HostManager.selectedGamemode.gamemodeID))
+        {
+            Debug.LogError("No suitable gamemode was found!");
+        }
     }
 
     public void RegisterPlayer(Player p)
@@ -215,14 +201,24 @@ public class SessionManager : NetworkBehaviour
         connectedPlayers.Remove(clientId);
     }
 
-    [Rpc(SendTo.Server)]
-    public void SpawnAllPlayersInMapRpc()
+    public bool TryGetRegisteredPlayer(ulong clientID, out Player value)
     {
-        foreach (var p in NetworkManager.ConnectedClientsIds)
+        if (connectedPlayers.TryGetValue(clientID, out value))
         {
-            GamemodeBase.Singleton.SpawnPlayer(connectedPlayers[p]);
+            return true;
         }
+        else
+            return false;
     }
+
+    //[Rpc(SendTo.Server)]
+    //public void SpawnAllPlayersInMapRpc()
+    //{
+    //    foreach (var p in NetworkManager.ConnectedClientsIds)
+    //    {
+    //        GamemodeBase.Singleton.SpawnPlayer(connectedPlayers[p]);
+    //    }
+    //}
 
     [Rpc(SendTo.Server)]
     public void SetMapRpc(string to)

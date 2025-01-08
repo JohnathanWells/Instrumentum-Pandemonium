@@ -6,18 +6,21 @@ public class Crouch : MonoBehaviour
 
     [Header("Slow Movement")]
     [Tooltip("Movement to slow down when crouched.")]
+    [SerializeField]
     public FirstPersonMovement movement;
     [Tooltip("Movement speed when crouched.")]
     public float movementSpeed = 2;
 
     [Header("Low Head")]
     [Tooltip("Head to lower when crouched.")]
+    [SerializeField]
     public Transform headToLower;
     [HideInInspector]
     public float? defaultHeadYLocalPosition;
     public float crouchYHeadPosition = 1;
     
     [Tooltip("Collider to lower when crouched.")]
+    [SerializeField]
     public CapsuleCollider colliderToLower;
     [HideInInspector]
     public float? defaultColliderHeight;
@@ -29,9 +32,9 @@ public class Crouch : MonoBehaviour
     void Reset()
     {
         // Try to get components.
-        movement = GetComponentInParent<FirstPersonMovement>();
-        headToLower = movement.GetComponentInChildren<Camera>().transform;
-        colliderToLower = movement.GetComponentInChildren<CapsuleCollider>();
+        //movement = GetComponentInParent<FirstPersonMovement>();
+        //headToLower = movement.GetComponentInChildren<Camera>().transform;
+        //colliderToLower = movement.GetComponentInChildren<CapsuleCollider>();
     }
 
     void LateUpdate()

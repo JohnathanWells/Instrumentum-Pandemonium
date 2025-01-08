@@ -11,7 +11,8 @@ public class SpectatorFirstPersonControls : MonoBehaviour
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
 
-    Rigidbody rigidbody;
+    [SerializeField] Rigidbody rigidbody;
+    [SerializeField] Camera playerCamera;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
@@ -22,7 +23,7 @@ public class SpectatorFirstPersonControls : MonoBehaviour
     void Awake()
     {
         // Get the rigidbody on this.
-        rigidbody = GetComponent<Rigidbody>();
+        //rigidbody = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -43,6 +44,6 @@ public class SpectatorFirstPersonControls : MonoBehaviour
 
 
         // Apply movement.
-        rigidbody.linearVelocity = Camera.main.transform.forward * targetVelocity.y + Camera.main.transform.right * targetVelocity.x + Camera.main.transform.up * targetVerticalVelocity;
+        rigidbody.linearVelocity = playerCamera.transform.forward * targetVelocity.y + playerCamera.transform.right * targetVelocity.x + playerCamera.transform.up * targetVerticalVelocity;
     }
 }

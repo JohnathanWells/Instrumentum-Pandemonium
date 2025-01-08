@@ -22,7 +22,7 @@ public class DynamicInteractivityNetworkScript : MonoBehaviour
             selectable.interactable = activeWhenDisconnected;
             return;
         }
-
+        //Debug.Log(string.Format("{0},{1},{2}", selectable != null, SessionManager.Singleton != null, transform.name));
         switch (selectableCondition)
         {
             case visibilityKind.Client:
@@ -46,20 +46,17 @@ public class DynamicInteractivityNetworkScript : MonoBehaviour
         }
     }
 
-    private void Awake()
+    private void OnEnable()
     {
         if (selectable == null)
             selectable = GetComponent<Selectable>();
-    }
 
-    private void OnEnable()
-    {
         UpdateInteractability();
     }
 
     public static void UpdateAll()
     {
-        var all = FindObjectsByType<DynamicInteractivityNetworkScript>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID);
+        var all = FindObjectsByType<DynamicInteractivityNetworkScript>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID);
 
         foreach (var o in all)
             o.UpdateInteractability();

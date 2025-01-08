@@ -46,6 +46,8 @@ public class LobbyManager : MonoBehaviour
         HostManager.LoadAllMaps();
         PopulateGamemodeDropdown();
         PopulateMapDropdown();
+
+        ValidateServerName(string.Empty);
     }
 
     public void PopulateGamemodeDropdown()
@@ -369,6 +371,7 @@ public class LobbyManager : MonoBehaviour
 
     public void StartGame()
     {
+
         SessionManager.Singleton.LoadSelectedMap();
     }
 }

@@ -22,12 +22,15 @@ public class Player : NetworkBehaviour
         }
     }
     public UnityAction OnPlayerNameChanged;
+    public static Player localPlayer;
+
+
     public override void OnNetworkSpawn()
     {
         if (IsOwner)
         {
             SetNameRpc(PlayerSettings.playerName);
-            SessionManager.Singleton.RegisterPlayer(this);
+            localPlayer = this;
         }
         else
         {
@@ -35,6 +38,7 @@ public class Player : NetworkBehaviour
             Debug.Log("IsHost: " + IsHost.ToString());
         }
 
+        SessionManager.Singleton.RegisterPlayer(this);
         SessionManager.Singleton.OnPlayerObjectSpawned?.Invoke(this);
 
         //LobbyManager.Singleton.UpdatePlayers();

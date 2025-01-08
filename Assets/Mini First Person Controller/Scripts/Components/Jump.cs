@@ -2,7 +2,7 @@
 
 public class Jump : MonoBehaviour
 {
-    Rigidbody rigidbody;
+    [SerializeField] Rigidbody rigidbody;
     public float jumpStrength = 2;
     public event System.Action Jumped;
 
@@ -19,7 +19,7 @@ public class Jump : MonoBehaviour
     void Awake()
     {
         // Get rigidbody.
-        rigidbody = GetComponent<Rigidbody>();
+        //rigidbody = GetComponent<Rigidbody>();
     }
 
     void LateUpdate()

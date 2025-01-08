@@ -6458,7 +6458,7 @@ GameObject:
   - component: {fileID: 737301789}
   - component: {fileID: 737301792}
   m_Layer: 5
-  m_Name: Input Field
+  m_Name: Server Name Input Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6647,7 +6647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7e1c6e180cb7349ac259ce8192a5fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectable: {fileID: 0}
+  selectable: {fileID: 737301789}
   selectableCondition: 0
   activeWhenDisconnected: 1
 --- !u!1 &763381532
@@ -11191,7 +11191,7 @@ GameObject:
   - component: {fileID: 1330105932}
   - component: {fileID: 1330105934}
   m_Layer: 5
-  m_Name: Input Field
+  m_Name: Name Input Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
