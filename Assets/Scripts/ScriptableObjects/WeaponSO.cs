@@ -5,9 +5,11 @@ public class WeaponSO : ScriptableObject
 {
     public string weaponName;
     public string weaponID;
-    public Transform weapon;
+    public uint weaponInventoryIndex;
+    public HandWeaponScript holdWeaponModel;
+    public WeaponScriptBase cameraWeaponModel;
     public Transform pickupModel;
 
-    public int maxAmmo;
-    public float rateOfFire;
+    public uint startingAmmo;
+    public AmmoSO ammoType;
 }

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90739045c6e9eb540974c21bc8fe011a, type: 3}
+  m_Name: shotgun
+  m_EditorClassIdentifier: 
+  weaponName: Blaster
+  weaponID: shotgun
+  weaponInventoryIndex: 2
+  holdWeaponModel: {fileID: 2000978908651779327, guid: 73046a80d8e3db24e83dd1d84f093736, type: 3}
+  cameraWeaponModel: {fileID: 7331651473622341009, guid: 10e9647ac04ffb54bb7b636c4f7b7cca, type: 3}
+  pickupModel: {fileID: 6845737763991700989, guid: f0be91841ec34954d856dd5d5ec181e6, type: 3}
+  startingAmmo: 20
+  ammoType: {fileID: 11400000, guid: 95b47f55c6a712940a4792b04e39b514, type: 2}

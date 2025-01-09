@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 1084402605765312790}
   - component: {fileID: 1073026664311755948}
   - component: {fileID: 1135595658325891992}
+  - component: {fileID: 5969213647458663114}
   - component: {fileID: 3449189493873074267}
   - component: {fileID: 4710675065723264079}
   m_Layer: 0
@@ -296,6 +297,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!114 &5969213647458663114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082040352114203326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43daa09ab2a4444d9a930afd7a4cd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPivot: {fileID: 1683748910243817717}
+  cameraPivot: {fileID: 5236441320628358323}
+  ammoInventory: []
+  inventoryKeys:
+  - index: 0
+    inputManagerButtonName: Weapon1
+  - index: 1
+    inputManagerButtonName: Weapon2
+  - index: 2
+    inputManagerButtonName: Weapon3
 --- !u!114 &3449189493873074267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceThreshold: 0.15
-  isGrounded: 0
+  isGrounded: 1
 --- !u!1 &1083055867835035530
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +538,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.488, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5236441320628358323}
   m_Father: {fileID: 1084402605765312790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1101969223386591140
@@ -822,6 +846,37 @@ Transform:
   - {fileID: 123300690749437915}
   - {fileID: 7506525839000607607}
   m_Father: {fileID: 1081533437232539552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3626025347232544639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5236441320628358323}
+  m_Layer: 0
+  m_Name: CameraWeaponPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5236441320628358323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626025347232544639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1084684936728274678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4897417322087454461
 GameObject:
@@ -6906,6 +6961,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnNotConnected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7074892960910279067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7122,6 +7180,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3627973071951187104, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717797994071700466, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -7501,6 +7563,11 @@ GameObject:
 --- !u!1 &1664602845238652542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6773453254523023025, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
+  m_PrefabInstance: {fileID: 5267514669152796879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1683748910243817717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6792580631051872314, guid: 6e1875dd542424a45a81e9f83b57bb76, type: 3}
   m_PrefabInstance: {fileID: 5267514669152796879}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1696089630461541646 stripped
