@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class WeaponInventoryScript : MonoBehaviour
 {
+    public PlayerScript owner;
     public Transform handPivot;
     public Transform cameraPivot;
     public List<WeaponEquipped> weaponInventory = new List<WeaponEquipped>();
@@ -85,16 +86,16 @@ public class WeaponInventoryScript : MonoBehaviour
         public bool owned = true;
         public bool equipped = false;
         public bool empty = false;
-        public WeaponSO associatedWeapon;
+        public WeaponSO weaponSO;
         public WeaponScriptBase cameraEquippedWeapon;
         public HandWeaponScript handWeapon;
 
         public UnityAction<WeaponEquipped> OnRemoved;
 
 
-        public WeaponEquipped(WeaponSO SO, Transform handPivot, Transform cameraPivot, AmmoInventory ammo)
+        public WeaponEquipped(WeaponSO SO, Transform handPivot, Transform cameraPivot, AmmoInventory ammo, WeaponInventoryScript inventory)
         {
-            associatedWeapon = SO;
+            weaponSO = SO;
 
             cameraEquippedWeapon = Instantiate(SO.cameraWeaponModel, cameraPivot);
             cameraEquippedWeapon.transform.localPosition = Vector3.zero;
@@ -104,7 +105,7 @@ public class WeaponInventoryScript : MonoBehaviour
             handWeapon.transform.localPosition = Vector3.zero;
             handWeapon.transform.localRotation = Quaternion.identity;
 
-            cameraEquippedWeapon.Init(SO, ammo, handWeapon);
+            cameraEquippedWeapon.Init(SO, ammo, handWeapon, inventory);
         }
 
         public void UnSelectWeapon()
@@ -170,6 +171,21 @@ public class WeaponInventoryScript : MonoBehaviour
 
     public void AddWeapon(WeaponSO weapon)
     {
+        if (weapon.weaponInventoryIndex <= 0 )
+        {
+            return;
+        }
+
+        if (weapon.weaponInventoryIndex < weaponInventory.Count && weaponInventory[(int)weapon.weaponInventoryIndex] != null)
+        {
+            return;
+        }
+
+        var newWeapon = new WeaponEquipped(weapon, handPivot, cameraPivot, GetAmmoInventory(weapon.ammoType.type), this);
+
+        newWeapon.OnRemoved += UnregisterWeaponWithAmmo;
+
+        RegisterWeaponWithAmmo(newWeapon);
 
         if (weaponInventory.Count <= weapon.weaponInventoryIndex)
         {
@@ -177,26 +193,22 @@ public class WeaponInventoryScript : MonoBehaviour
             {
                 weaponInventory.Add(null);
             }
+
+            weaponInventory.Add(newWeapon);
         }
-        else if (weaponInventory[(int)weapon.weaponInventoryIndex] != null)
+        else
         {
-            return;
-        }
+            weaponInventory[(int)weapon.weaponInventoryIndex] = newWeapon;
+        }           
 
-        var newWeapon = new WeaponEquipped(weapon, handPivot, cameraPivot, GetAmmoInventory(weapon.ammoType.type));
-
-        newWeapon.OnRemoved += UnregisterWeaponWithAmmo; 
-
-        weaponInventory.Add(newWeapon);
-
-        RegisterWeaponWithAmmo(newWeapon);
-
-        if (selectedWeapon == null || _selectedWeapon < weapon.weaponInventoryIndex)
+        if (selectedWeapon == null || selectedWeapon.weaponSO.priority < weapon.priority)
         {
             SelectWeapon((int)weapon.weaponInventoryIndex);
         }
-
-            //newWeapon.SelectWeapon();
+        else
+        {
+            newWeapon.UnSelectWeapon();
+        }
     }
 
     public void SelectWeapon(int index)
@@ -308,7 +320,7 @@ public class WeaponInventoryScript : MonoBehaviour
     void RegisterWeaponWithAmmo(WeaponEquipped weapon)
     {
 
-        int ind = ammoInventory.FindIndex(x => x.ammoSO.type == weapon.associatedWeapon.ammoType.type);
+        int ind = ammoInventory.FindIndex(x => x.ammoSO.type == weapon.weaponSO.ammoType.type);
 
         if (ind < 0)
         {
@@ -323,7 +335,7 @@ public class WeaponInventoryScript : MonoBehaviour
 
     void UnregisterWeaponWithAmmo(WeaponEquipped weapon)
     {
-        int ind = ammoInventory.FindIndex(x => x.ammoSO.type == weapon.associatedWeapon.ammoType.type);
+        int ind = ammoInventory.FindIndex(x => x.ammoSO.type == weapon.weaponSO.ammoType.type);
 
         if (ind < 0)
         {
@@ -346,7 +358,7 @@ public class WeaponInventoryScript : MonoBehaviour
         if (index >= weaponInventory.Count || index < 0)
             return null;
 
-        if (weaponInventory[index] != null && weaponInventory[index].associatedWeapon.weaponID == weapon.weaponID)
+        if (weaponInventory[index] != null && weaponInventory[index].weaponSO.weaponID == weapon.weaponID)
             return weaponInventory[index];
 
         return null;

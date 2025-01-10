@@ -9,8 +9,9 @@ public abstract class WeaponScriptBase : MonoBehaviour
 
     public WeaponInventoryScript.AmmoInventory ammo;
 
-    public HandWeaponScript handCounterpart;
+    public WeaponInventoryScript inventory;
 
+    public HandWeaponScript handCounterpart;
 
     public UnityAction OnWeaponEquipped;
     public UnityAction OnWeaponUnequipped;
@@ -18,11 +19,12 @@ public abstract class WeaponScriptBase : MonoBehaviour
 
     public GameObject thisWeaponParent;
 
-    public virtual void Init(WeaponSO weapon, WeaponInventoryScript.AmmoInventory ammoReserve, HandWeaponScript handScript)
+    public virtual void Init(WeaponSO weapon, WeaponInventoryScript.AmmoInventory ammoReserve, HandWeaponScript handScript, WeaponInventoryScript inventory)
     {
         weaponSO = weapon;
         ammo = ammoReserve;
         handCounterpart = handScript;
+        this.inventory = inventory;
     }
 
     public void UnEquipWeapon()

@@ -15,6 +15,7 @@ MonoBehaviour:
   weaponName: Blaster
   weaponID: shotgun
   weaponInventoryIndex: 2
+  priority: 2
   holdWeaponModel: {fileID: 2000978908651779327, guid: 73046a80d8e3db24e83dd1d84f093736, type: 3}
   cameraWeaponModel: {fileID: 7331651473622341009, guid: 10e9647ac04ffb54bb7b636c4f7b7cca, type: 3}
   pickupModel: {fileID: 6845737763991700989, guid: f0be91841ec34954d856dd5d5ec181e6, type: 3}

@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2003313282864627746}
   - component: {fileID: 6718979158190099142}
+  - component: {fileID: 8780200930295396920}
   m_Layer: 0
-  m_Name: shotgun_projectile
+  m_Name: pistol_projectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,8 +46,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6806650dbc3d7245a59d717e4961b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 50
+  rigidbody: {fileID: 8780200930295396920}
   lifetime: 5
+  clinkParticle: {fileID: 6407854467131271978, guid: 1ccfcb9dfcdc8b647b8cb258bba5abaf, type: 3}
+  <minDamage>k__BackingField: 5
+  <maxDamage>k__BackingField: 5
+  killVerb: sprayed
+--- !u!54 &8780200930295396920
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907742872956347471}
+  serializedVersion: 4
+  m_Mass: 0.002
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &7711684873544221466
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +110,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.018926999, y: 0.018926999, z: 0.058370866}
+  m_LocalScale: {x: 0.026287708, y: 0.026287708, z: 0.081071295}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2003313282864627746}
@@ -205,7 +238,7 @@ TrailRenderer:
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.015625
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:

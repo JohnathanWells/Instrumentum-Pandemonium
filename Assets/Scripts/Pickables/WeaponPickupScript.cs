@@ -40,8 +40,8 @@ public class WeaponPickupScript : PickupScriptBase
 
     public override void PickUp()
     {
-        pickableParent.gameObject.SetActive(true);
-        isPickedUp = false;
+        pickableParent.gameObject.SetActive(false);
+        isPickedUp = true;
 
         StartCoroutine(StartResetTimer());
     }

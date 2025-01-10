@@ -3,16 +3,16 @@ using UnityEngine;
 public class PistolScript : WeaponScriptBase
 {
     public string fireInputName = "Fire1";
-    public Transform projectile;
+    public ProjectileScript projectile;
     public ParticleSystem playerMuzzleFlash;
     private ParticleSystem handMuzzleFlash;
     [SerializeField] private Transform muzzle;
 
     //public int cooldownLength = 1;
 
-    public override void Init(WeaponSO weapon, WeaponInventoryScript.AmmoInventory ammo, HandWeaponScript handCounterpart)
+    public override void Init(WeaponSO weapon, WeaponInventoryScript.AmmoInventory ammo, HandWeaponScript handCounterpart, WeaponInventoryScript inventory)
     {
-        base.Init(weapon, ammo, handCounterpart);
+        base.Init(weapon, ammo, handCounterpart, inventory);
 
         //muzzle = handCounterpart.muzzle;
         handMuzzleFlash = handCounterpart.muzzleFlash;
@@ -35,7 +35,8 @@ public class PistolScript : WeaponScriptBase
     {
         if (ammo.amount > 0)
         {
-            Instantiate(projectile, muzzle.position, muzzle.rotation);
+            var p = Instantiate(projectile, muzzle.position, muzzle.rotation);
+            p.dealer = inventory.owner;
             playerMuzzleFlash.Play();
             handMuzzleFlash.Play();
 
