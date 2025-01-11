@@ -3,7 +3,72 @@ guid: 641ea11c071a91d419f1ed600279e000
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drum
+    second: {fileID: 2100000, guid: 25736712f9f317a489e7675c09581e38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_body
+    second: {fileID: 2100000, guid: 6157cc811f5e79d43b49e31b83474921, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_front
+    second: {fileID: 2100000, guid: 6217118c81502b44bb2de402bfb8a7f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_guts
+    second: {fileID: 2100000, guid: fb1953afa9295984abd27b4151c1a1a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_handle
+    second: {fileID: 2100000, guid: 2c92cb1e0fc9eb247a9c43e11d962e66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_light
+    second: {fileID: 2100000, guid: 08e9186609ece2745b2b1f1bf0d15474, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_muzzle
+    second: {fileID: 2100000, guid: d41683396da93be499d6d593c6c8a3f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_ring
+    second: {fileID: 2100000, guid: 3de51dcd8b59123419a09e7dc7794587, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 221
+    second: {fileID: 2800000, guid: a3b3523c742191242924e0fd7b2fa5a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrassCylindar_S
+    second: {fileID: 2800000, guid: bc8bd2d56838a6d4b90666ebe4d9dd98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: m-014
+    second: {fileID: 2800000, guid: 5bd96d59b076f9f43ba4be7f89cc5823, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: m-017
+    second: {fileID: 2800000, guid: 38a1ca952b2f50940a0476e48c3025de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: trak2_holes1a
+    second: {fileID: 2800000, guid: e7020464d6d2b0042b4b4bc1a89bc92f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +153,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.099999994
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -42,6 +42,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cross
+    second: {fileID: 2100000, guid: 8e358d83f838a594fb9ed432925b0eab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door
+    second: {fileID: 2100000, guid: 52f0f5baa621ad14f8870e2c44423ecb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: floor
     second: {fileID: 2100000, guid: 1ab000fbc8f37714e9f76e2bb33cb541, type: 2}
   - first:
@@ -57,6 +67,41 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: c0c74d1230216464e9c41d68c53e25f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hut_body
+    second: {fileID: 2100000, guid: fbce298837ccc844ebb1d5febd07024a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hut_ceiling
+    second: {fileID: 2100000, guid: 4d2bc1ee5ec113f4eb8ef0aa240ada60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hut_floor
+    second: {fileID: 2100000, guid: ca0af10af13136f458e446b2cd365c85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hut_roof
+    second: {fileID: 2100000, guid: d3b97a8d92631304f900c106055a2578, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lookout_handrail
+    second: {fileID: 2100000, guid: ca755831f3c6e924785b7de731f5f9a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lookout_handrail_top
+    second: {fileID: 2100000, guid: b9e4931d33cc4cf428b88a8187df440b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: lookout_underside
     second: {fileID: 2100000, guid: 974bccbfebc28d5489441c717c086134, type: 2}
   - first:
@@ -64,6 +109,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: platform_underside
     second: {fileID: 2100000, guid: fe58b8d2075646641a909e06e086bf5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: podium
+    second: {fileID: 2100000, guid: 41b3aa1acd986b049b0abf0d244a7fcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -77,6 +127,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: symbol1
+    second: {fileID: 2100000, guid: c2bfa26d7e5557747a343a3013038676, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: symbol2
+    second: {fileID: 2100000, guid: 8d02f209084b67946a9731f790b9369f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: symbol3
+    second: {fileID: 2100000, guid: 396e758c1b4e9fd4b9596b013c462b3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: symbol4
+    second: {fileID: 2100000, guid: 3206e1740b007c84b8533b2424828ac0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_door_drame
+    second: {fileID: 2100000, guid: 797c5ca3403c9dd4290bebdd112ec0c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: tower_floor
     second: {fileID: 2100000, guid: 49e7c5c8f622ae046a77a84f58e5a4e7, type: 2}
   - first:
@@ -84,6 +159,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: tower_hand_rail
     second: {fileID: 2100000, guid: df3b3de16d075c14f8e6afca452305b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_hand_rail_top
+    second: {fileID: 2100000, guid: 8b261ed04a9e7e64482fad7c8910cd76, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -121,8 +201,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

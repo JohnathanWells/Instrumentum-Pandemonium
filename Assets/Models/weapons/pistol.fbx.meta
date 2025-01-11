@@ -8,32 +8,47 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: gun_body
-    second: {fileID: 2100000, guid: 2c8903ed1b0f86845a7127f92ecad21a, type: 2}
+    second: {fileID: 2100000, guid: 44ec4fe3116b4754298c3a8c4c7ef071, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: gun_guts
-    second: {fileID: 2100000, guid: a7b22bef70bf9e245874d99682a0b2cf, type: 2}
+    second: {fileID: 2100000, guid: 34f8d20877309274596c1a6f07f27d34, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: gun_handle
-    second: {fileID: 2100000, guid: b35b8edc8c151fd48841fca29b2e8a13, type: 2}
+    second: {fileID: 2100000, guid: a28b33a0886fe4b448d3b162e25a6067, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: gun_inside
-    second: {fileID: 2100000, guid: 0ffd3e2a648f6bc47a1147d686d0e6d1, type: 2}
+    second: {fileID: 2100000, guid: 08b2054faa6be6e4bbe86d9517260442, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: gun_light
-    second: {fileID: 2100000, guid: acd6b70921ca35a429b32fdbf08ca641, type: 2}
+    second: {fileID: 2100000, guid: 7d8e0b4e7ecf37a4e91724b9cf7fa3e5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: gun_muzzle
-    second: {fileID: 2100000, guid: 1db2db27c0fa76a4fbcdf53e49d57c9b, type: 2}
+    second: {fileID: 2100000, guid: 69d2536f72ab2a1469bd7f26dc3d34c2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 221
+    second: {fileID: 2800000, guid: 65df427a95c857148bbb719536adc1bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrassCylindar_S
+    second: {fileID: 2800000, guid: 3b95705eab63e3244bfb088f2f5d0f07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: m-014
+    second: {fileID: 2800000, guid: 90cc34774580eb7408351093ea6960be, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

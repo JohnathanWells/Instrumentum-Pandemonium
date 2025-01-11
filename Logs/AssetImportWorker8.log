@@ -1,0 +1,615 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.30f1 (62b05ba0686a) revision 6467675'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'en' Physical Memory: 16304 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+D:/UnityProjects/InstrumentumPandemonium
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+58760
+-job-worker-count
+7
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: D:/UnityProjects/InstrumentumPandemonium
+D:/UnityProjects/InstrumentumPandemonium
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12876]  Target information:
+
+Player connection [12876]  * "[IP] 192.168.1.76 [Port] 0 [Flags] 2 [Guid] 3389970575 [EditorId] 3389970575 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-65P1NK5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12876] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12876] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 13.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.30f1 (62b05ba0686a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/InstrumentumPandemonium/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5954 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006035 seconds.
+- Loaded All Assemblies, in  0.741 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.533 seconds
+Domain Reload Profiling: 1269ms
+	BeginReloadAssembly (307ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (251ms)
+		LoadAssemblies (301ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (245ms)
+			TypeCache.Refresh (243ms)
+				TypeCache.ScanAssembly (221ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (534ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (450ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (227ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.476 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Refreshing native plugins compatible for Editor in 1.98 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+TypeManager.Initialize took: 571ms
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x0006e] in .\Library\PackageCache\com.unity.multiplayer.playmode\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00000] in .\Library\PackageCache\com.unity.multiplayer.playmode\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x0002c] in .\Library\PackageCache\com.unity.multiplayer.playmode\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x00018] in .\Library\PackageCache\com.unity.multiplayer.playmode\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:198 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x00036] in .\Library\PackageCache\com.unity.multiplayer.playmode\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00038] in .\Library\PackageCache\com.unity.multiplayer.playmode\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <ed969b0e627d471da4848289f9c322df>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <ed969b0e627d471da4848289f9c322df>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <ed969b0e627d471da4848289f9c322df>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <4e9c48eedf6f482fa439ccf335631481>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.347 seconds
+Domain Reload Profiling: 3816ms
+	BeginReloadAssembly (272ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (1043ms)
+		LoadAssemblies (615ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (593ms)
+			TypeCache.Refresh (426ms)
+				TypeCache.ScanAssembly (392ms)
+			BuildScriptInfoCaches (142ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2348ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2080ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (216ms)
+			ProcessInitializeOnLoadAttributes (1364ms)
+			ProcessInitializeOnLoadMethodAttributes (478ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.28 seconds
+Refreshing native plugins compatible for Editor in 1.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8528 unused Assets / (5.4 MB). Loaded Objects now: 9190.
+Memory consumption went from 187.3 MB to 181.9 MB.
+Total: 22.095800 ms (FindLiveObjects: 1.826500 ms CreateObjectMapping: 1.385900 ms MarkObjects: 14.193100 ms  DeleteObjects: 4.684600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 234293.336313 seconds.
+  path: Assets/Models/weapons/rifle.fbx
+  artifactKey: Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/rifle.fbx using Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ec4207484b3fa91b0317f696a48f145') in 0.7730477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.930127 seconds.
+  path: Assets/Models/weapons/sniper.fbx
+  artifactKey: Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sniper.fbx using Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b3aa8f1bc57fa1be9b9f1bd500b038e') in 0.0574552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.417993 seconds.
+  path: Assets/Models/weapons/rifle.fbx
+  artifactKey: Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/rifle.fbx using Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4d1497b411f15897ebb2fb1bf1591fe') in 0.0438746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 730.971265 seconds.
+  path: Assets/Models/weapons/pistol.fbx
+  artifactKey: Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/pistol.fbx using Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eefcdce20d5a8533bbfeaf597709e21e') in 0.05384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Models/weapons/shotgun.fbx
+  artifactKey: Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/shotgun.fbx using Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8762373a4b09e438918bbb5fccf55c45') in 0.0629481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.545646 seconds.
+  path: Assets/Models/weapons/sword.fbx
+  artifactKey: Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sword.fbx using Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a8ef54e52c7640abc8859c13ada5564') in 0.1616906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.507595 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/pistol_spinning_model.prefab
+  artifactKey: Guid(90a15aaaf6c32b1429fe69390acd8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/pistol_spinning_model.prefab using Guid(90a15aaaf6c32b1429fe69390acd8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2317c50702bd6bbf2c13ef9c03187682') in 0.0252457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/sniper_spinning_model.prefab
+  artifactKey: Guid(39d96f18be8947448a4e40be1283dafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/sniper_spinning_model.prefab using Guid(39d96f18be8947448a4e40be1283dafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd53a9a929a7e239f22403d7477c739c1') in 0.0351348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.806727 seconds.
+  path: Assets/Models/weapons/pistol.fbx
+  artifactKey: Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/pistol.fbx using Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ebfb024ac0bcaf3cbae5a760e83335e') in 0.0272944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.228431 seconds.
+  path: Assets/Models/weapons/rifle.fbx
+  artifactKey: Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/rifle.fbx using Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1df2fc0eef7085f5ee55f11dfcdc7770') in 0.1204757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.228552 seconds.
+  path: Assets/Models/weapons/shotgun.fbx
+  artifactKey: Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/shotgun.fbx using Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3adcf5f87fd5e2df31d65787c9422178') in 0.0545688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.881585 seconds.
+  path: Assets/Models/weapons/sniper.fbx
+  artifactKey: Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sniper.fbx using Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22b946a10a514eb579eadbe560ed7c0a') in 0.0361717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.771190 seconds.
+  path: Assets/Models/weapons/sniper.fbx
+  artifactKey: Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sniper.fbx using Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cb0316bdee50b92f906be56255e9133') in 0.0288002 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.847956 seconds.
+  path: Assets/Models/weapons/sword.fbx
+  artifactKey: Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sword.fbx using Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea9532667f967344b15d9d13d59e2353') in 0.1418224 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.690756 seconds.
+  path: Assets/Models/weapons/sword.fbx
+  artifactKey: Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sword.fbx using Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63e782e4fa857025dbdfaf0975d57d32') in 0.1117442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.964923 seconds.
+  path: Assets/Materials/weapons/pistol
+  artifactKey: Guid(262fcc5667ce7a34aa741e7d15b6e3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/weapons/pistol using Guid(262fcc5667ce7a34aa741e7d15b6e3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53e02c59a5d468f3e529f5b4a3125842') in 0.000937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.890315 seconds.
+  path: Assets/Materials/weapons/sword
+  artifactKey: Guid(f2a1cb394b8c55a4a95f1243ba118e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/weapons/sword using Guid(f2a1cb394b8c55a4a95f1243ba118e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3de1f8bedd99271f9df2d1779f5f828e') in 0.0007298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033260 seconds.
+  path: Assets/Materials/weapons/sword/blade.mat
+  artifactKey: Guid(47e0cf9cb4654e345a3d53d66ad2cacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/weapons/sword/blade.mat using Guid(47e0cf9cb4654e345a3d53d66ad2cacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '945d9cbf7ae2f3df802aa269b3d6d926') in 0.0248734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Materials/weapons/sword/grip.mat
+  artifactKey: Guid(a28b75fef0c63c04d8bbfb242b08ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/weapons/sword/grip.mat using Guid(a28b75fef0c63c04d8bbfb242b08ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd4ac175e89230e5d1a91ad8dc5db9e6') in 0.0310436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.977425 seconds.
+  path: Assets/Materials/weapons/sniper
+  artifactKey: Guid(15447fa1f79a1ce4db1c1f94ce6af304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/weapons/sniper using Guid(15447fa1f79a1ce4db1c1f94ce6af304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adc25a3dbf52031b0fbfa5bc0df62b32') in 0.001055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.621040 seconds.
+  path: Assets/Models/weapons/pistol.fbx
+  artifactKey: Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/pistol.fbx using Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e401336daf058e0bb1d62df8d519761') in 0.0302292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/weapons/shotgun.fbx
+  artifactKey: Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/shotgun.fbx using Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b13b9ed81b49bb91c0cf6e30bbf07ab') in 0.0475473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.693402 seconds.
+  path: Assets/Models/weapons/sniper.fbx
+  artifactKey: Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sniper.fbx using Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99cc52c17ea0ff10b75afaf07c82a738') in 0.0564194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.747034 seconds.
+  path: Assets/Models/weapons/shotgun.fbx
+  artifactKey: Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/shotgun.fbx using Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '584e52e213397653550cdeefc2bad6ea') in 2.5776604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.462665 seconds.
+  path: Assets/Models/weapons/rifle.fbx
+  artifactKey: Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/rifle.fbx using Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70230a34dc3950e54abdb250367b1996') in 0.0506488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.330744 seconds.
+  path: Assets/Models/weapons/pistol.fbx
+  artifactKey: Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/pistol.fbx using Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47cd899561106762a61ac00e7eac4d3d') in 0.0431154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.691293 seconds.
+  path: Assets/Prefab/pickups/weapons/Sniper_Pickup Variant.prefab
+  artifactKey: Guid(d423d3dbed28d1049afae5835933dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/Sniper_Pickup Variant.prefab using Guid(d423d3dbed28d1049afae5835933dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90cd84679616a9f939e2e05d7e62e1fd') in 0.0180712 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 80
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.088241 seconds.
+  path: Assets/Resources/weapons/sniper 1.asset
+  artifactKey: Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/sniper 1.asset using Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09bcd491ba0d6d460ba34dee350d58c2') in 0.0064992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.817813 seconds.
+  path: Assets/Resources/weapons/rifle.asset
+  artifactKey: Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/rifle.asset using Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '607589350405573298d52c9b9c48c231') in 0.0056437 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.882007 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/pistol_spinning_model.prefab
+  artifactKey: Guid(90a15aaaf6c32b1429fe69390acd8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/pistol_spinning_model.prefab using Guid(90a15aaaf6c32b1429fe69390acd8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1985e43c82bf51f94abbb2d4a9682bbb') in 0.0318651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/sniper_spinning_model.prefab
+  artifactKey: Guid(39d96f18be8947448a4e40be1283dafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/sniper_spinning_model.prefab using Guid(39d96f18be8947448a4e40be1283dafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85454435b39263567b2b7ae88fe8ab28') in 0.0277533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.430998 seconds.
+  path: Assets/Models/weapons/rifle_spinning_model.prefab
+  artifactKey: Guid(f002cc66de29aca4198b774585f30d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/rifle_spinning_model.prefab using Guid(f002cc66de29aca4198b774585f30d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ddad22ea7056b2d23a71ec81ae1f285') in 0.0263952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.377256 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/rifle_spinning_model.prefab
+  artifactKey: Guid(f002cc66de29aca4198b774585f30d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/rifle_spinning_model.prefab using Guid(f002cc66de29aca4198b774585f30d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1478a03e437b45c320322430cc28a2ff') in 0.0193146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.524837 seconds.
+  path: Assets/Resources/weapons/rifle.asset
+  artifactKey: Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/rifle.asset using Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68683a5bed871ad88c2c561c0ca16575') in 0.006979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.760534 seconds.
+  path: Assets/Resources/weapons/rifle.asset
+  artifactKey: Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/rifle.asset using Guid(3099a4870d6affc4a9b8a427cc8d43e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1afa0d10cfe3a3ec49e052a3b9746760') in 0.0066689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.459744 seconds.
+  path: Assets/Prefab/pickups/weapons/Pistol_Pickup.prefab
+  artifactKey: Guid(a13661f83860bfb428ecbe62aad774ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/Pistol_Pickup.prefab using Guid(a13661f83860bfb428ecbe62aad774ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '377b549f1a0f06a0d248c10ea2274b20') in 0.0109907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 85
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prefab/pickups/weapons/Sniper_Pickup Variant.prefab
+  artifactKey: Guid(d423d3dbed28d1049afae5835933dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/Sniper_Pickup Variant.prefab using Guid(d423d3dbed28d1049afae5835933dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2079e6d030cf4efc55ba07292b8458d1') in 0.0098317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.826443 seconds.
+  path: Assets/Resources/weapons/rifle 1.asset
+  artifactKey: Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/rifle 1.asset using Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f0674b4d764d9e6ab5ebff09061773a') in 0.0093754 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.154319 seconds.
+  path: Assets/Resources/weapons/sword.asset
+  artifactKey: Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/sword.asset using Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35613f405409444c0b7227a64604b401') in 0.0075598 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.826616 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/sword_spinning_model.prefab
+  artifactKey: Guid(61c3bf7de1386bf47ad6a8ba1bfaca21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/sword_spinning_model.prefab using Guid(61c3bf7de1386bf47ad6a8ba1bfaca21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e4cd72bebb5b733db567ec40f2e01a4') in 0.025585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.929119 seconds.
+  path: Assets/Models/weapons/sword.fbx
+  artifactKey: Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sword.fbx using Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90f7b82a7096b8a9962bf25e7b440835') in 0.1139589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.739585 seconds.
+  path: Assets/Models/weapons/sword.fbx
+  artifactKey: Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sword.fbx using Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27eaa4fe78c5d99f24b5b6d1156b47a3') in 0.0824545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.993864 seconds.
+  path: Assets/Materials/weapons/sword/crossguard.mat
+  artifactKey: Guid(e01aea1689414374f84e0360d27ba6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/weapons/sword/crossguard.mat using Guid(e01aea1689414374f84e0360d27ba6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e52bc1ff55ee24bfb8232129ac1d71c0') in 0.0214159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.885758 seconds.
+  path: Assets/Resources/weapons/sword.asset
+  artifactKey: Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/sword.asset using Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0f991820c9bc40830d729e1b6e2cc2f') in 0.006985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.352167 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/sword_spinning_model.prefab
+  artifactKey: Guid(61c3bf7de1386bf47ad6a8ba1bfaca21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/sword_spinning_model.prefab using Guid(61c3bf7de1386bf47ad6a8ba1bfaca21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33be70ba4a25d7ce39f0955341d3d072') in 0.0287477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.610034 seconds.
+  path: Assets/Prefab/pickups/weapons/Sword Pickup Variant.prefab
+  artifactKey: Guid(3cb89043edd9b0a44941ce425e9c0d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/Sword Pickup Variant.prefab using Guid(3cb89043edd9b0a44941ce425e9c0d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30c45736230b6e1419cd8e4a17207962') in 0.0089567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 86
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.385582 seconds.
+  path: Assets/Resources/weapons/sword.asset
+  artifactKey: Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/weapons/sword.asset using Guid(9dbf1ca110cd32043a5e315a280dfc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd92455fc81329d892768bda5211c0ad3') in 0.0069657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.539293 seconds.
+  path: Assets/Prefab/pickups/weapons/Rifle Pickup Variant.prefab
+  artifactKey: Guid(74e64b604761df140b1f40fd485c3eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/Rifle Pickup Variant.prefab using Guid(74e64b604761df140b1f40fd485c3eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0e5d5b68c371dd68cc51376b1f12ba2') in 0.0088295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 85
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.500468 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/pistol_spinning_model.prefab
+  artifactKey: Guid(90a15aaaf6c32b1429fe69390acd8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/pistol_spinning_model.prefab using Guid(90a15aaaf6c32b1429fe69390acd8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0d1c9ce4369e9ea50754d631f2332a9') in 0.0251411 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefab/pickups/weapons/pickup_models/sniper_spinning_model.prefab
+  artifactKey: Guid(39d96f18be8947448a4e40be1283dafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/pickups/weapons/pickup_models/sniper_spinning_model.prefab using Guid(39d96f18be8947448a4e40be1283dafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '330f6edd8784e0546622a018c5daa263') in 0.0289442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

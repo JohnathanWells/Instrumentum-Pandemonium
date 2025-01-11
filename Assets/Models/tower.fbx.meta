@@ -12,6 +12,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: symbol1
+    second: {fileID: 2100000, guid: 3fc107ad3cfbd1e42a9587120c976608, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: symbol2
+    second: {fileID: 2100000, guid: 9ca29cd7eab104a468837213497f2eb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: symbol3
+    second: {fileID: 2100000, guid: 1f51df5d2f48ff34f81f50dc9f8ddac2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: symbol4
+    second: {fileID: 2100000, guid: dae6127c709193447b75645d618bdbca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_door_drame
+    second: {fileID: 2100000, guid: e12a5355b3542b14b9034dd1ca9d443f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: tower_floor
     second: {fileID: 2100000, guid: d8ba9cdef3d54c74c8d726fd18ffb0ed, type: 2}
   - first:
@@ -19,6 +44,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: tower_hand_rail
     second: {fileID: 2100000, guid: 1a5b891dbfc0d084e9ee1b85c3a177a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_hand_rail_top
+    second: {fileID: 2100000, guid: a5fefe823e013d2448778de65da333ed, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -76,8 +106,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

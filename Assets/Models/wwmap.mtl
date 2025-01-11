@@ -1,0 +1,496 @@
+# Blender MTL File: 'wwmap.blend'
+# Material Count: 45
+
+newmtl Big_Stained_Glass
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.165138
+illum 9
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\glass_frame.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\glass_frame.png
+
+newmtl None
+Ns 500
+Ka 0.8 0.8 0.8
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl Small_Stained_Glass
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.259416
+illum 9
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\glass_frame.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\glass_frame.png
+
+newmtl Walls
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.712157 0.800000 0.493680
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Marble\\Mat_Marble_Green_01-256x256.png
+
+newmtl cave_floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Stone\\Mat_Stone_Tan_02-256x256.png
+
+newmtl cave_walls
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Stone\\Mat_Stone_White_01-256x256.png
+
+newmtl church_door
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\237.jpg
+
+newmtl church_floor
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\church\\wood floor 2.png
+
+newmtl church_roof
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\220.jpg
+
+newmtl church_walls
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.173228 0.173228 0.173228
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\222.jpg
+
+newmtl cross
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\221.jpg
+
+newmtl door
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Wood\\Mat_Wood_Blue_01-256x256.png
+
+newmtl eye_floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.281009 0.281009 0.281009
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\212.jpg
+
+newmtl eye_inside
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.090837 0.090837 0.090837
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Stone\\Mat_Stone_Gray_01-256x256.png
+
+newmtl eye_outside
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Marble\\Mat_Marble_White_02-256x256.png
+
+newmtl floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl front_stained_glass
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.559055
+illum 9
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\church\\Circles_S.jpg
+
+newmtl front_stained_glass.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.559055
+illum 9
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\church\\SmallRound_S.jpg
+
+newmtl glass
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.418182
+illum 9
+
+newmtl hut_body
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.000000 0.003761
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\222.jpg
+
+newmtl hut_ceiling
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Wood\\Mat_Wood_White_03-256x256.png
+
+newmtl hut_floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.285131 0.053827
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\church\\wood floor 2.png
+
+newmtl hut_roof
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\church\\classicroofing (1)_0.png
+
+newmtl lookout_handrail
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.011412 0.000000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.772727
+illum 9
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\glass_frame.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\glass_frame.png
+
+newmtl lookout_handrail_top
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl lookout_underside
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\tower\\Mat_Stone_Black_01-256x256 1.png
+
+newmtl platform_underside
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.133767 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\tower\\Mat_Stone_Black_01-256x256.png
+
+newmtl podium
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Stone\\Mat_Stone_Black_01-256x256.png
+
+newmtl roof_underside
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\237.jpg
+
+newmtl sand
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.763047 0.320107
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\Sand _1.jpg
+
+newmtl stem
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.020764 0.271894 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Stone\\Mat_Stone_Black_01-256x256.png
+
+newmtl stem_inside
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.173354 0.173354 0.173354
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\221.jpg
+
+newmtl symbol1
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 1.000000 1.000000 1.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbols.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbols.png
+
+newmtl symbol2
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 1.000000 1.000000 1.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbol2.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbol2.png
+
+newmtl symbol3
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 1.000000 1.000000 1.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbol3.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbol3.png
+
+newmtl symbol4
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 1.000000 1.000000 1.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbol4.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\symbol4.png
+
+newmtl tower_door_drame
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.548852 0.548852 0.548852
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Stone\\Mat_Stone_Black_02-256x256.png
+
+newmtl tower_floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.567301 0.043207
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\texture pack\\Wood\\Mat_Wood_Blue_03-256x256.png
+
+newmtl tower_hand_rail
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.011412 0.000000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.772727
+illum 9
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\CardBack - Copy.png
+map_d D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\CardBack_trasparency.png
+
+newmtl tower_hand_rail_top
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl tower_roof
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\tower\\Mat_Stone_Black_01-256x256.png
+
+newmtl tower_stairs
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.000000 0.673652
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\tower\\Mat_Wood_White_01-256x256.png
+
+newmtl tower_wall
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.548852 0.548852 0.548852
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\UnityProjects\\InstrumentumPandemonium\\Assets\\Textures\\tower\\Mat_Marble_White_01-256x256.png
+
+newmtl wall
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl water
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.004002 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

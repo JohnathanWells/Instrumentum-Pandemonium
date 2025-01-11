@@ -3,7 +3,42 @@ guid: f9fd90e3c080a7d48aa444dadace6c88
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crystal
+    second: {fileID: 2100000, guid: e44ee953b0fc4cf46bda652246510f08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_body
+    second: {fileID: 2100000, guid: 48d1ae9a5b2638146afb78eddbfed5f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_handle
+    second: {fileID: 2100000, guid: e27e974d11766434e9484f8e34a6917f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_ring
+    second: {fileID: 2100000, guid: 59dff1abcdfda564c9e93a984a757ab5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun_vents
+    second: {fileID: 2100000, guid: 902f65a80dad1f4429e556d2457e3cf4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 221
+    second: {fileID: 2800000, guid: 5267a85482b00ed45bb3810cc0ed7046, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: m-017
+    second: {fileID: 2800000, guid: cfe36e0e1d0fc2a4abaa56a14b989c67, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
