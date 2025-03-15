@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2258624961424563356, guid: a13661f83860bfb428ecbe62aad774ad, type: 3}
+      propertyPath: weaponSO
+      value: 
+      objectReference: {fileID: 11400000, guid: a516e025140bbee4c89c92301c307f41, type: 2}
     - target: {fileID: 6525831684590567600, guid: a13661f83860bfb428ecbe62aad774ad, type: 3}
       propertyPath: m_Name
       value: Shotgun_Pickup Variant

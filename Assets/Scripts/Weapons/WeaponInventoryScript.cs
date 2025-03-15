@@ -7,6 +7,7 @@ public class WeaponInventoryScript : MonoBehaviour
     public PlayerScript owner;
     public Transform handPivot;
     public Transform cameraPivot;
+    public FirstPersonRigidbodyAnimator firstPersonAnimator;
     public List<WeaponEquipped> weaponInventory = new List<WeaponEquipped>();
     public List<AmmoInventory> ammoInventory = new List<AmmoInventory>();
     public WeaponKey[] inventoryKeys;

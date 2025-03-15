@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Poker
   weaponID: pistol
-  weaponInventoryIndex: 1
+  weaponInventoryIndex: 2
   priority: 1
   holdWeaponModel: {fileID: 7400761679000779498, guid: a1abc91b06ed4a247b85dc6235279559, type: 3}
   cameraWeaponModel: {fileID: 7321237416709853814, guid: fc967fc4860843a4b8727c64a8153647, type: 3}
   pickupModel: {fileID: 6845737763991700989, guid: 90a15aaaf6c32b1429fe69390acd8ad5, type: 3}
+  killVerbs: []
   startingAmmo: 20
   ammoType: {fileID: 11400000, guid: 76f9ac598e52fe54fa522077bbe2ddb6, type: 2}

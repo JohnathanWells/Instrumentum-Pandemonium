@@ -16,8 +16,8 @@ MonoBehaviour:
   weaponID: sword
   weaponInventoryIndex: 1
   priority: 1
-  holdWeaponModel: {fileID: 7400761679000779498, guid: a1abc91b06ed4a247b85dc6235279559, type: 3}
-  cameraWeaponModel: {fileID: 7321237416709853814, guid: fc967fc4860843a4b8727c64a8153647, type: 3}
+  holdWeaponModel: {fileID: 7400761679000779498, guid: 4e1fd91e77f15344cb32898f25e387c7, type: 3}
+  cameraWeaponModel: {fileID: 8652903857758758169, guid: 0fadb569ac791ed46b8c35e7958363f4, type: 3}
   pickupModel: {fileID: 8054197998166024711, guid: 61c3bf7de1386bf47ad6a8ba1bfaca21, type: 3}
   killVerbs: []
   startingAmmo: 20

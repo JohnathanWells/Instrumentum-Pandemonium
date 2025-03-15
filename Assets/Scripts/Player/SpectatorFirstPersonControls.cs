@@ -19,6 +19,10 @@ public class SpectatorFirstPersonControls : MonoBehaviour
 
     public UnityEngine.Events.UnityAction<Vector2, float> OnMove;
 
+    private Vector3 targetVelocity;
+    private Vector3 targetDirections;
+    float targetMovingSpeed;
+
 
     void Awake()
     {
@@ -26,24 +30,34 @@ public class SpectatorFirstPersonControls : MonoBehaviour
         //rigidbody = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    public void MoveHorizontal(Vector2 input, bool isPressingRun = false)
     {
         // Update IsRunning from input.
-        IsRunning = canRun && Input.GetKey(runningKey);
+        IsRunning = canRun && isPressingRun;
 
         // Get targetMovingSpeed.
-        float targetMovingSpeed = IsRunning ? runSpeed : speed;
+        targetMovingSpeed = IsRunning ? runSpeed : speed;
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
         }
 
         // Get targetVelocity from input.
-        Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
-        float targetVerticalVelocity = Input.GetAxis("Jump") * targetMovingSpeed + Input.GetAxis("Crouch") * -targetMovingSpeed;
+        targetDirections = (playerCamera.transform.forward * input.y + playerCamera.transform.right * input.x).normalized;
+
+         
+        // Apply movement.
+        rigidbody.linearVelocity = targetDirections * targetMovingSpeed;
+    }
+
+    public void MoveVertical(float verticalInput)
+    {
+        // Get targetVelocity from input.
+        targetDirections.y = Mathf.Clamp(targetDirections.y + verticalInput, -1, 1);
+        targetDirections = targetDirections.normalized;
 
 
         // Apply movement.
-        rigidbody.linearVelocity = playerCamera.transform.forward * targetVelocity.y + playerCamera.transform.right * targetVelocity.x + playerCamera.transform.up * targetVerticalVelocity;
+        rigidbody.linearVelocity = targetDirections * targetMovingSpeed;
     }
 }

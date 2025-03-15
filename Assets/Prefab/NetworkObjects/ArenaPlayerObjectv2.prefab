@@ -194,7 +194,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3888a1e1c52793144a6d07b8c508772e, type: 3}
   - {fileID: 8300000, guid: 5b26cf3cd5f6b914a80e6d3476caaf86, type: 3}
   - {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
-  crouch: {fileID: 3699918902084730430}
+  crouch: {fileID: 0}
   crouchStartAudio: {fileID: 1081533435859574904}
   crouchedAudio: {fileID: 2470198515106313720}
   crouchEndAudio: {fileID: 7490971369290088100}
@@ -242,12 +242,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1084684936728274678}
   - {fileID: 2395825820795000570}
-  - {fileID: 2299935366222680237}
   - {fileID: 1084730207950274140}
-  - {fileID: 1086095229279121626}
-  m_Father: {fileID: 4463395317751222703}
+  m_Father: {fileID: 1642547951417175514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1073026664311755948
 CapsuleCollider:
@@ -519,7 +516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1084402605765312790}
+  m_Father: {fileID: 4751963303476699052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1050652640063456190
 MonoBehaviour:
@@ -565,13 +562,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083055867835035530}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.488, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5236441320628358323}
-  m_Father: {fileID: 1084402605765312790}
+  m_Father: {fileID: 4751963303476699052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1101969223386591140
 Camera:
@@ -5884,7 +5881,7 @@ GameObject:
   - component: {fileID: 1493102148345038351}
   - component: {fileID: 5444071020931343351}
   m_Layer: 6
-  m_Name: Sphere
+  m_Name: Spectator Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5904,7 +5901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 444859389400075035}
-  m_Father: {fileID: 1084402605765312790}
+  m_Father: {fileID: 3174757032311323010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6001861729621833826
 MeshFilter:
@@ -6109,6 +6106,41 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &5645257334731518836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4751963303476699052}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4751963303476699052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5645257334731518836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1084684936728274678}
+  - {fileID: 1086095229279121626}
+  - {fileID: 1642547951417175514}
+  - {fileID: 3174757032311323010}
+  m_Father: {fileID: 4463395317751222703}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6411153047733931078
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,7 +6152,6 @@ GameObject:
   - component: {fileID: 1642547951417175514}
   - component: {fileID: 6759354477647401174}
   - component: {fileID: 9014667539805098201}
-  - component: {fileID: 3699918902084730430}
   m_Layer: 0
   m_Name: Combat
   m_TagString: Untagged
@@ -6136,13 +6167,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6411153047733931078}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1081533437232539552}
-  m_Father: {fileID: 4463395317751222703}
+  - {fileID: 1084402605765312790}
+  m_Father: {fileID: 4751963303476699052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6759354477647401174
 MonoBehaviour:
@@ -6177,24 +6209,6 @@ MonoBehaviour:
   rigidbody: {fileID: 1135595658325891992}
   jumpStrength: 2
   groundCheck: {fileID: 1050652640063456190}
---- !u!114 &3699918902084730430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6411153047733931078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b67ddb3d23b8340b125aede56d7e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 306
-  movement: {fileID: 6759354477647401174}
-  movementSpeed: 2
-  headToLower: {fileID: 1084684936728274678}
-  crouchYHeadPosition: 1
-  colliderToLower: {fileID: 1073026664311755948}
 --- !u!1 &6445293266813820668
 GameObject:
   m_ObjectHideFlags: 0
@@ -6220,12 +6234,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6445293266813820668}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4463395317751222703}
+  m_Children:
+  - {fileID: 2299935366222680237}
+  m_Father: {fileID: 4751963303476699052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &895956445594008748
 MonoBehaviour:
@@ -6646,6 +6661,7 @@ GameObject:
   - component: {fileID: 7010523106496175496}
   - component: {fileID: 7074892960910279067}
   - component: {fileID: 7442803694805560362}
+  - component: {fileID: 6485993235134690594}
   m_Layer: 0
   m_Name: ArenaPlayerObjectv2
   m_TagString: Untagged
@@ -6666,9 +6682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1084402605765312790}
-  - {fileID: 1642547951417175514}
-  - {fileID: 3174757032311323010}
+  - {fileID: 4751963303476699052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-2734652400842057979
@@ -6708,7 +6722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf275053916b8b469ef0c6fd0f34a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
   currentMode: 0
   spectatorObject:
     obj: {fileID: 6445293266813820668}
@@ -6823,7 +6836,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  nO: {fileID: -2734652400842057979}
   _displayName: UNKNOWN
 --- !u!114 &7010523106496175496
 MonoBehaviour:
@@ -6871,7 +6883,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 3699918902084730430}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -6946,7 +6958,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3699918902084730430}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -7048,6 +7060,26 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   TransitionStateInfoList: []
   m_Animator: {fileID: 8790933568388681330}
+--- !u!114 &6485993235134690594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175367526916074043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4db2f863b865d4a99ebe0e62347525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputEnabled: 1
+  spectatorScript: {fileID: 895956445594008748}
+  movementScript: {fileID: 6759354477647401174}
+  jumpScript: {fileID: 9014667539805098201}
+  crouchScript: {fileID: 0}
+  runInputName: Run
+  jumpInputName: Jump
+  crouchInputName: Crouch
 --- !u!1001 &5267514669152796879
 PrefabInstance:
   m_ObjectHideFlags: 0

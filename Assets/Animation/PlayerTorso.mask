@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerTorso
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Arm
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/Bone
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.001/Bone.002
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.L/Bone.031.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.L/Bone.031.L/Bone.032.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.L/Bone.031.L/Bone.032.L/Bone.032.L_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.R/Bone.031.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.R/Bone.031.R/Bone.032.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Bone.007.R/Bone.031.R/Bone.032.R/Bone.032.R_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.006/Crest_C
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.012.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.012.L/Bone.013.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.012.L/Bone.013.L/Bone.014.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.012.L/Bone.013.L/Bone.014.L/Bone.015.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.012.L/Bone.013.L/Bone.014.L/Bone.015.L/Bone.015.L_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.016.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.016.L/Bone.028.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.016.L/Bone.028.L/Bone.029.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.016.L/Bone.028.L/Bone.029.L/Bone.030.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.016.L/Bone.028.L/Bone.029.L/Bone.030.L/Bone.030.L_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.017.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.017.L/Bone.025.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.017.L/Bone.025.L/Bone.026.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.017.L/Bone.025.L/Bone.026.L/Bone.027.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.017.L/Bone.025.L/Bone.026.L/Bone.027.L/Bone.027.L_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.018.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.018.L/Bone.022.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.018.L/Bone.022.L/Bone.023.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.018.L/Bone.022.L/Bone.023.L/Bone.024.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.011.L/Bone.018.L/Bone.022.L/Bone.023.L/Bone.024.L/Bone.024.L_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.019.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.019.L/Bone.020.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.019.L/Bone.020.L/Bone.021.L
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.L/Bone.009.L/Bone.010.L/Bone.019.L/Bone.020.L/Bone.021.L/Bone.021.L_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.012.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.012.R/Bone.013.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.012.R/Bone.013.R/Bone.014.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.012.R/Bone.013.R/Bone.014.R/Bone.015.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.012.R/Bone.013.R/Bone.014.R/Bone.015.R/Bone.015.R_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.016.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.016.R/Bone.028.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.016.R/Bone.028.R/Bone.029.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.016.R/Bone.028.R/Bone.029.R/Bone.030.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.016.R/Bone.028.R/Bone.029.R/Bone.030.R/Bone.030.R_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.017.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.017.R/Bone.025.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.017.R/Bone.025.R/Bone.026.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.017.R/Bone.025.R/Bone.026.R/Bone.027.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.017.R/Bone.025.R/Bone.026.R/Bone.027.R/Bone.027.R_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.018.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.018.R/Bone.022.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.018.R/Bone.022.R/Bone.023.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.018.R/Bone.022.R/Bone.023.R/Bone.024.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.011.R/Bone.018.R/Bone.022.R/Bone.023.R/Bone.024.R/Bone.024.R_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.019.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.019.R/Bone.020.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.019.R/Bone.020.R/Bone.021.R
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.008.R/Bone.009.R/Bone.010.R/Bone.019.R/Bone.020.R/Bone.021.R/Bone.021.R_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.Cape
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.Cape/Bone.Cape_end
+    m_Weight: 1
+  - m_Path: Armature/Bone/Bone.033.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.L/Bone.034.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.L/Bone.034.L/Bone.035.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.L/Bone.034.L/Bone.035.L/Bone.036.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.L/Bone.034.L/Bone.035.L/Bone.036.L/Bone.036.L_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.R/Bone.034.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.R/Bone.034.R/Bone.035.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.R/Bone.034.R/Bone.035.R/Bone.036.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/Bone.033.R/Bone.034.R/Bone.035.R/Bone.036.R/Bone.036.R_end
+    m_Weight: 0
+  - m_Path: Cape
+    m_Weight: 1
+  - m_Path: Crest_A
+    m_Weight: 1
+  - m_Path: Crest_B
+    m_Weight: 1
+  - m_Path: Crest_C.001
+    m_Weight: 1
+  - m_Path: FaceMask
+    m_Weight: 1
+  - m_Path: FaceMask_B
+    m_Weight: 1
+  - m_Path: FaceMask_C
+    m_Weight: 1
+  - m_Path: Foot
+    m_Weight: 0
+  - m_Path: Forearm
+    m_Weight: 1
+  - m_Path: Hand
+    m_Weight: 1
+  - m_Path: Hand.001
+    m_Weight: 1
+  - m_Path: Helmet_A
+    m_Weight: 1
+  - m_Path: Helmet_B
+    m_Weight: 1
+  - m_Path: Helmet_C
+    m_Weight: 1
+  - m_Path: Leg
+    m_Weight: 0
+  - m_Path: Shoulders_A
+    m_Weight: 1
+  - m_Path: Shoulders_B
+    m_Weight: 1
+  - m_Path: Thigh
+    m_Weight: 0
+  - m_Path: Torso
+    m_Weight: 1
+  - m_Path: Torso.001
+    m_Weight: 1
+  - m_Path: Torso.002
+    m_Weight: 1
+  - m_Path: Torso.003
+    m_Weight: 1
+  - m_Path: Torso.004
+    m_Weight: 1

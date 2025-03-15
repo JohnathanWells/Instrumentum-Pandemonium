@@ -8,6 +8,7 @@ public class ShotgunScript : WeaponScriptBase
     public Transform muzzle;
     public ShotgunProjectileScript projectiles;
     private ParticleSystem handMuzzleFlash;
+    public FirstPersonRigidbodyAnimator animator;
     //[SerializeField] private Transform muzzle;
 
     //public int cooldownLength = 1;
@@ -17,6 +18,7 @@ public class ShotgunScript : WeaponScriptBase
         base.Init(weapon, ammo, handCounterpart, inventory);
 
         //muzzle = handCounterpart.muzzle;
+        animator = inventory.firstPersonAnimator;
         handMuzzleFlash = handCounterpart.muzzleFlash;
     }
 
@@ -37,6 +39,7 @@ public class ShotgunScript : WeaponScriptBase
     {
         if (ammo.amount > 0)
         {
+            animator.ShootAttack();
             //Instantiate(projectile, muzzle.position, muzzle.rotation);
             //projectiles.Play();
             var proj = Instantiate(projectiles, muzzle.position, muzzle.rotation);

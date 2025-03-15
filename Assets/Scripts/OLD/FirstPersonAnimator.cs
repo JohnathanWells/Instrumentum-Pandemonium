@@ -25,4 +25,14 @@ public class FirstPersonAnimator : MonoBehaviour
         animator.SetFloat("Z", val.z);
 
     }
+
+    public void MeleeAttack()
+    {
+        animator.SetTrigger("Swipe");
+    }
+
+    public void ShootAttack()
+    {
+        animator.SetTrigger("Shoot");
+    }
 }

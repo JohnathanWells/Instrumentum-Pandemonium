@@ -26,10 +26,10 @@ public class FirstPersonMovement : MonoBehaviour
         //rigidbody = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    public void MoveHorizontal(Vector2 input, bool isPressingRun = false)
     {
         // Update IsRunning from input.
-        IsRunning = canRun && Input.GetKey(runningKey);
+        IsRunning = canRun && isPressingRun;
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
@@ -39,12 +39,12 @@ public class FirstPersonMovement : MonoBehaviour
         }
 
         // Get targetVelocity from input.
-        Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+        Vector3 targetVelocity = new Vector3(input.x * targetMovingSpeed, rigidbody.linearVelocity.y, input.y * targetMovingSpeed);
 
         //Send the event updating this character's movement
-        OnMove?.Invoke(targetVelocity.normalized, targetVelocity.magnitude);
+        OnMove?.Invoke(new Vector3(input.x, input.y).normalized, targetVelocity.magnitude);
 
         // Apply movement.
-        rigidbody.linearVelocity = rigidbody.transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
+        rigidbody.linearVelocity = rigidbody.transform.TransformDirection(targetVelocity);
     }
 }

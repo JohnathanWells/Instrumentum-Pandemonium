@@ -12,6 +12,7 @@ public class GroundCheck : MonoBehaviour
     /// Called when the ground is touched again.
     /// </summary>
     public event System.Action Grounded;
+    public event System.Action NotGrounded;
 
     const float OriginOffset = .001f;
     Vector3 RaycastOrigin => transform.position + Vector3.up * OriginOffset;
@@ -27,6 +28,11 @@ public class GroundCheck : MonoBehaviour
         if (isGroundedNow && !isGrounded)
         {
             Grounded?.Invoke();
+        }
+
+        if (!isGroundedNow && isGrounded)
+        {
+            NotGrounded?.Invoke();
         }
 
         // Update isGrounded.
