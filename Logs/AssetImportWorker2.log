@@ -260,3 +260,71 @@ Received Import Request.
 Start importing Assets/Models/intro/Intro.playable using Guid(70a66d312a563e541835d14d0fe420db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf7c715263d589ae3322539a3badc68e') in 0.0146591 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 86
 
+========================================================================
+Received Import Request.
+  Time since last request: 1904.969639 seconds.
+  path: Assets/Animation/intro_dead_soldier.controller
+  artifactKey: Guid(f5d56e5bc8374004bb04549fa527197b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/intro_dead_soldier.controller using Guid(f5d56e5bc8374004bb04549fa527197b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c635ea91ea2d2692bbd96853ea91783') in 0.0226741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.893976 seconds.
+  path: Assets/Models/soldier/rigged_soldier.fbx
+  artifactKey: Guid(2ffb7321fcb349b4ca741d22ebde406c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier/rigged_soldier.fbx using Guid(2ffb7321fcb349b4ca741d22ebde406c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11bb59684ec180f1b2d507edd711a066') in 0.5380693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 303
+
+========================================================================
+Received Import Request.
+  Time since last request: 1075.623082 seconds.
+  path: Assets/Models/soldier/player_character.prefab
+  artifactKey: Guid(b33783ce9e7c47c4fae1233489b48fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier/player_character.prefab using Guid(b33783ce9e7c47c4fae1233489b48fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '756ff4dddbc901bc4b7fddee72eec7b1') in 0.1060867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 549
+
+========================================================================
+Received Import Request.
+  Time since last request: 222.885751 seconds.
+  path: Assets/Models/soldier/rigged_soldier.fbx
+  artifactKey: Guid(2ffb7321fcb349b4ca741d22ebde406c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier/rigged_soldier.fbx using Guid(2ffb7321fcb349b4ca741d22ebde406c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '106dbe8498625a55cf7ed8be638953a9') in 0.5351092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 304
+
+========================================================================
+Received Import Request.
+  Time since last request: 309.655134 seconds.
+  path: Assets/Animation/intro_dead_soldier 1.controller
+  artifactKey: Guid(336aacd5661699c42b5495642f048287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/intro_dead_soldier 1.controller using Guid(336aacd5661699c42b5495642f048287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b10fb14c08576acfb28f50e9c733bf62') in 0.0039209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.911202 seconds.
+  path: Assets/Animation/intro_waking_soldier.controller
+  artifactKey: Guid(336aacd5661699c42b5495642f048287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/intro_waking_soldier.controller using Guid(336aacd5661699c42b5495642f048287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1c61b89a65637fdc8b3bf170482c52d') in 0.0028098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 404.594559 seconds.
+  path: Assets/Models/weapons/pistol.fbx
+  artifactKey: Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/pistol.fbx using Guid(e634af121f117604abaa1b4cc8f35499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e73917c8394e2f23b29064f4b56f3ba9') in 4.5929625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Models/weapons/shotgun.fbx
+  artifactKey: Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/shotgun.fbx using Guid(641ea11c071a91d419f1ed600279e000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ede76a128efca8129204184a89f76f2e') in 0.359659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

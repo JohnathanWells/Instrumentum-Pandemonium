@@ -334,3 +334,119 @@ Received Import Request.
 Start importing Assets/Models/intro/hall_wall.mat using Guid(911282371ace47a478ccee4fc06f80e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '749039f76b2175e69e8b435dd7d5e35a') in 0.0237868 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 2197.142479 seconds.
+  path: Assets/Models/soldier/player_character.prefab
+  artifactKey: Guid(b33783ce9e7c47c4fae1233489b48fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier/player_character.prefab using Guid(b33783ce9e7c47c4fae1233489b48fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0019c9ca1d5593b4ac630c49195d824c') in 0.1152547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 549
+
+========================================================================
+Received Import Request.
+  Time since last request: 1075.984708 seconds.
+  path: Assets/Models/soldier/rigged_soldier.fbx
+  artifactKey: Guid(2ffb7321fcb349b4ca741d22ebde406c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier/rigged_soldier.fbx using Guid(2ffb7321fcb349b4ca741d22ebde406c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcbb6c0edbbc05d0dae23e7bf437921a') in 0.6422916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 303
+
+========================================================================
+Received Import Request.
+  Time since last request: 222.402675 seconds.
+  path: Assets/Models/soldier/player_character.prefab
+  artifactKey: Guid(b33783ce9e7c47c4fae1233489b48fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier/player_character.prefab using Guid(b33783ce9e7c47c4fae1233489b48fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '432b51332244ca7b036906665fb0ff8c') in 0.079939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 549
+
+========================================================================
+Received Import Request.
+  Time since last request: 718.688691 seconds.
+  path: Assets/Models/weapons/rifle.fbx
+  artifactKey: Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/rifle.fbx using Guid(0deea2d70b1016d4ea65652d048becd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad4f3ba11b752de3dea2277038589cff') in 4.6416049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/weapons/sword.fbx
+  artifactKey: Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sword.fbx using Guid(d32d76b699e5b684f9dbbeb0a76e32e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5c816f2f7486aecdb91e91125c37d8d') in 0.1216728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Models/weapons/sniper.fbx
+  artifactKey: Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/weapons/sniper.fbx using Guid(f9fd90e3c080a7d48aa444dadace6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51dd0d04823f3f8e3d3b42e93799cb58') in 0.2079081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 134.296619 seconds.
+  path: Assets/Cutscenes/wake up.signal
+  artifactKey: Guid(7469d613640abb24f81b8509bd5a4203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cutscenes/wake up.signal using Guid(7469d613640abb24f81b8509bd5a4203) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb5ae26751241ee50736220c3f9a9dbf') in 0.0037622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 491.548462 seconds.
+  path: Assets/Music/Heavy 5 - Beat Loop Only.mp3
+  artifactKey: Guid(718a9086bfb8154458c80827232aa74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Heavy 5 - Beat Loop Only.mp3 using Guid(718a9086bfb8154458c80827232aa74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce4c31f1c8f7d0dc676509b2ffe6917c') in 0.0345998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Music/Heavy 5 - Second Verse Only.mp3
+  artifactKey: Guid(418f881ef01dd324ebe863058a594974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Heavy 5 - Second Verse Only.mp3 using Guid(418f881ef01dd324ebe863058a594974) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95b213a82213354949d5efea40818b5d') in 0.0376085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Music/Heavy 5 - Intro and First Verse Only.mp3
+  artifactKey: Guid(dfac3e27d3cbc9f489a098db23666ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Heavy 5 - Intro and First Verse Only.mp3 using Guid(dfac3e27d3cbc9f489a098db23666ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85d7d961d4442ef217783f55089b25f4') in 0.0356293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Music/Heavy 5 - Final Chorus and Ending (No Lead Guitar).mp3
+  artifactKey: Guid(b65522adaa9281a49a0e77783ebad21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Heavy 5 - Final Chorus and Ending (No Lead Guitar).mp3 using Guid(b65522adaa9281a49a0e77783ebad21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e333db349996eee44c475d58fb52b636') in 0.02211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Music/Heavy 5 - Chorus Only (No Lead Guitar).mp3
+  artifactKey: Guid(e9a8fc6b966b5a04a89ebaa9a2a3fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Heavy 5 - Chorus Only (No Lead Guitar).mp3 using Guid(e9a8fc6b966b5a04a89ebaa9a2a3fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c002a2b3f5d369d235022ee40ef611cd') in 0.0259996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Music/Heavy 5 - Full Song (with Ending).mp3
+  artifactKey: Guid(76e603bee1b6cfb4597955480d59b743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Heavy 5 - Full Song (with Ending).mp3 using Guid(76e603bee1b6cfb4597955480d59b743) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92b7b19d85d0ee0c474815776fa2a387') in 0.0301618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.279981 seconds.
+  path: Assets/Music/Ambient 1 - Full Song (No Ending).mp3
+  artifactKey: Guid(4eea9a753926c4a42aae4f74281fb8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/Ambient 1 - Full Song (No Ending).mp3 using Guid(4eea9a753926c4a42aae4f74281fb8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8ae9c9608ff64f02bce83a5de22d5c8') in 0.0248482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -414,11 +414,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dead_body.waking
-      takeName: Armature|dead_body.waking
+      name: Dead_body_waking
+      takeName: Armature|dead_body_waking
       internalID: -2806588099681760176
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 145
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
